@@ -1,4 +1,12 @@
-/*
-   Import partials below
-*/
-@import 'normalize';
+@import '_fonts.scss';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.wrapper {
+  min-width: 320px;
+  max-width: 878px;
+}
