@@ -1,0 +1,56 @@
+
+.reason-section {
+  margin-bottom: 50px;
+}
+.reason__lead {
+  margin-bottom: 20px;
+  @include text(9px, 'Acrom-Medium');
+}
+.reason__img {
+  width: 100%;
+  height: 88px;
+  margin-bottom: 30px;
+  @include img(start);
+}
+.title-block {
+  padding: 0 50px;
+  margin-bottom: 30px;
+}
+.reason__subtitle {
+  @include text (10px, 'Acrom-ExtraBold');
+  margin-bottom: 12px;
+  text-transform: uppercase;
+}
+.reason__title {
+  text-transform: uppercase;
+  @include text (14px, 'Acrom-Bold');
+}
+.black {
+  background-color: black;
+  color: white;
+}
+
+.reason__list-wrap {
+
+}
+.desc {
+  margin-bottom: 7px;
+  @include text (9px, 'Acrom-ExtraBold');
+}
+.reason__list {
+  padding: 0 30px;
+  list-style-type: square;
+}
+.reason__list-item {
+  margin-bottom: 13px;
+  @include text;
+}
+
+.orange-text {
+  margin-top: 30px;
+  padding: 0 50px;
+  color: $orange-color;
+  @include text;
+  text-align: center;
+}
+

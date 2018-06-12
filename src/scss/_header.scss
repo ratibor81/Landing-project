@@ -1,0 +1,76 @@
+body {
+  min-width: 320px;
+  line-height: 1.5;
+}
+.header {
+  height: 100vh;
+  margin-bottom: 35px;
+  background-color: #181c27;
+  color: #fff;
+} 
+.header-top {
+  width: 100%;
+  padding-top: 12px; 
+  display: flex;
+  justify-content: space-between;
+}
+.logo__link {
+  text-decoration: none;
+  color: #fff;
+  font-weigth: bold;
+}
+.go {
+  background-color: #000;
+}
+.it {
+  background-color: $orange-color;
+}
+.header-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 30px 30px;
+}
+.header-left{
+  text-align: center;
+  margin-bottom: 90px;
+}
+.header-left__title {
+  margin-bottom: 25px;
+  @include text (20px, 'Acrom-Bold');
+  text-transform: uppercase;
+}
+
+.header-left__subtitle, .header-right__subtitle {
+  font-size: $base-size;
+  text-transform: uppercase;
+}
+
+.header-left__subtitle {
+  font-family: 'Acrom-Bold';
+}
+
+.header-right__subtitle {
+  font-family:  'Acrom-ExtraBold';
+  margin-bottom: 8px;
+}
+
+.header-right__text {
+  margin-bottom: 25px;
+  @include text;
+}
+.header-left__btn, .header-right__btn {
+  padding: 15px 25px;
+  border: none;
+  background-color: $orange-color;
+  color: #fff;
+  @include text (8px, 'Acrom-ExtraBold')
+  text-transform: uppercase;
+}
+.header-right__btn {
+  display: block;
+  margin: 0 auto;
+}
+.header-left__btn {
+  display: none;
+}

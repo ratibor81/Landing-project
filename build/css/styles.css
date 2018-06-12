@@ -1,0 +1,357 @@
+@font-face {
+  font-family: 'Acrom-Bold';
+  src: url("../fonts/Acrom-Bold.woff") format("woff");
+  font-style: normal;
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: 'Acrom-ExtraBold';
+  src: url("../fonts/Acrom-ExtraBold.woff") format("woff");
+  font-style: normal;
+  font-weight: extrabold;
+}
+
+@font-face {
+  font-family: 'Acrom-Regular';
+  src: url("../fonts/Acrom-Regular.woff") format("woff");
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'Acrom-Medium';
+  src: url("../fonts/Acrom-Medium.woff") format("woff");
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'MinionPro-Regular';
+  src: url("../fonts/MinionPro-Regular.woff") format("woff");
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'Gilroy-Light';
+  src: url("../fonts/Gilroy-Light.woff") format("woff");
+  font-style: normal;
+  font-weight: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.wrapper {
+  min-width: 300px;
+  max-width: 878px;
+  margin: 0 auto;
+  padding: 0 12px;
+}
+
+body {
+  min-width: 320px;
+  line-height: 1.5;
+}
+
+.header {
+  height: 100vh;
+  margin-bottom: 35px;
+  background-color: #181c27;
+  color: #fff;
+}
+
+.header-top {
+  width: 100%;
+  padding-top: 12px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo__link {
+  text-decoration: none;
+  color: #fff;
+  font-weigth: bold;
+}
+
+.go {
+  background-color: #000;
+}
+
+.it {
+  background-color: #ff6b08;
+}
+
+.header-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 30px 30px;
+}
+
+.header-left {
+  text-align: center;
+  margin-bottom: 90px;
+}
+
+.header-left__title {
+  margin-bottom: 25px;
+  font-size: 20px;
+  font-family: "Acrom-Bold";
+  text-transform: uppercase;
+}
+
+.header-left__subtitle,
+.header-right__subtitle {
+  font-size: 9px;
+  text-transform: uppercase;
+}
+
+.header-left__subtitle {
+  font-family: 'Acrom-Bold';
+}
+
+.header-right__subtitle {
+  font-family: 'Acrom-ExtraBold';
+  margin-bottom: 8px;
+}
+
+.header-right__text {
+  margin-bottom: 25px;
+  font-size: 9px;
+  font-family: "Acrom-Regular";
+}
+
+.header-left__btn,
+.header-right__btn {
+  padding: 15px 25px;
+  border: none;
+  background-color: #ff6b08;
+  color: #fff;
+  font-size: 8px;
+  font-family: "Acrom-ExtraBold";
+  text-transform: uppercase;
+}
+
+.header-right__btn {
+  display: block;
+  margin: 0 auto;
+}
+
+.header-left__btn {
+  display: none;
+}
+
+.reason-section {
+  margin-bottom: 50px;
+}
+
+.reason__lead {
+  margin-bottom: 20px;
+  font-size: 9px;
+  font-family: "Acrom-Medium";
+}
+
+.reason__img {
+  width: 100%;
+  height: 88px;
+  margin-bottom: 30px;
+  background: url(../img/start.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.title-block {
+  padding: 0 50px;
+  margin-bottom: 30px;
+}
+
+.reason__subtitle {
+  font-size: 10px;
+  font-family: "Acrom-ExtraBold";
+  margin-bottom: 12px;
+  text-transform: uppercase;
+}
+
+.reason__title {
+  text-transform: uppercase;
+  font-size: 14px;
+  font-family: "Acrom-Bold";
+}
+
+.black {
+  background-color: black;
+  color: white;
+}
+
+.desc {
+  margin-bottom: 7px;
+  font-size: 9px;
+  font-family: "Acrom-ExtraBold";
+}
+
+.reason__list {
+  padding: 0 30px;
+  list-style-type: square;
+}
+
+.reason__list-item {
+  margin-bottom: 13px;
+  font-size: 9px;
+  font-family: "Acrom-Regular";
+}
+
+.orange-text {
+  margin-top: 30px;
+  padding: 0 50px;
+  color: #ff6b08;
+  font-size: 9px;
+  font-family: "Acrom-Regular";
+  text-align: center;
+}
+
+.facts {
+  margin-bottom: 35px;
+}
+
+.facts__top {
+  padding: 0 50px;
+  margin-bottom: 23px;
+}
+
+.facts__top-title {
+  text-transform: uppercase;
+  font-size: 12px;
+  font-family: "Acrom-Bold";
+  margin-bottom: 20px;
+}
+
+.facts__top-subtitle {
+  font-size: 9px;
+  font-family: "Acrom-Medium";
+}
+
+.facts-list {
+  padding: 0 30px;
+  list-style-type: square;
+}
+
+.facts-item {
+  margin-bottom: 15px;
+  color: #ff6b08;
+}
+
+.facts-article1 {
+  color: black;
+}
+
+.facts-article1:last-child {
+  margin-bottom: 0;
+}
+
+.facts-article__title {
+  font-size: 15px;
+  font-family: "Acrom-ExtraBold";
+  margin-bottom: 7px;
+}
+
+.tiny {
+  font-size: 9px;
+}
+
+.facts-article__subtitle {
+  font-size: 9px;
+  font-family: "Acrom-Medium";
+  background-color: #16ebfe;
+  margin-bottom: 10px;
+}
+
+.facts-article__text {
+  font-size: 9px;
+  font-family: "Acrom-Regular";
+}
+
+.future-top {
+  margin-bottom: 30px;
+}
+
+.future-top__img {
+  width: 100%;
+  height: 116px;
+  background: url(../img/future.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: 23px;
+}
+
+.future-top__title {
+  padding: 0 60px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-family: "Acrom-ExtraBold";
+  line-height: 1.5;
+}
+
+.future-top__subtitle {
+  margin-bottom: 10px;
+  font-size: 9px;
+  font-family: "Acrom-Bold";
+}
+
+.future-top__text {
+  font-size: 9px;
+  font-family: "Acrom-Regular";
+}
+
+.blue {
+  background-color: #16ebfe;
+}
+
+.future-bott {
+  margin-bottom: 30px;
+}
+
+.future-title-block {
+  padding: 0 50px;
+}
+
+.future-bott__title {
+  margin-bottom: 10px;
+  font-size: 12px;
+  font-family: "Acrom-ExtraBold";
+  text-transform: uppercase;
+}
+
+.future-bott__subtitle {
+  margin-bottom: 30px;
+  font-size: 9px;
+  font-family: "Acrom-Regular";
+}
+
+.future-bott__list {
+  padding: 0 30px;
+  list-style-type: square;
+}
+
+.future-bott__list-item {
+  margin-bottom: 15px;
+}
+
+.future-bott__list-title {
+  margin-bottom: 7px;
+  text-transform: uppercase;
+  font-size: 9px;
+  font-family: "Acrom-ExtraBold";
+}
+
+.future-bott__list-text {
+  font-size: 9px;
+  font-family: "Acrom-Regular";
+}

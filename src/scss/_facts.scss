@@ -1,0 +1,47 @@
+.facts {
+	margin-bottom: 35px;
+}
+.facts__top{
+	padding: 0 50px;
+	margin-bottom: 23px;
+}
+.facts__top-title {
+	text-transform: uppercase;
+	@include text (12px, 'Acrom-Bold');
+	margin-bottom: 20px;
+}
+.facts__top-subtitle {
+	@include text (9px, 'Acrom-Medium');
+}
+.facts-bott {
+
+}
+.facts-list {
+	padding: 0 30px;
+	list-style-type: square;
+}
+.facts-item {
+	margin-bottom: 15px;
+	color: $orange-color;
+}
+.facts-article1{
+	color: black;
+}
+.facts-article1:last-child {
+	margin-bottom: 0;
+}
+.facts-article__title {
+	@include text (15px, 'Acrom-ExtraBold');
+	margin-bottom: 7px;
+}
+.tiny {
+	font-size: 9px;
+}
+.facts-article__subtitle {
+	@include text (9px, 'Acrom-Medium');
+	background-color: $blue-color;
+	margin-bottom: 10px;
+}
+.facts-article__text {
+	@include text;
+}

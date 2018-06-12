@@ -1,0 +1,56 @@
+.future-top {
+	margin-bottom: 30px;
+}
+.future-top__img {
+  width: 100%;
+  height: 116px;
+  @include img (future);
+  margin-bottom: 23px;
+}
+.future-top__title {
+	padding: 0 60px;
+	margin-bottom: 20px;
+	text-transform: uppercase;
+	@include text (12px, 'Acrom-ExtraBold');
+	line-height: 1.5;
+}
+.future-top__subtitle {
+	margin-bottom: 10px;
+	@include text (9px, 'Acrom-Bold');
+}
+.future-top__text {
+	@include text; 
+}
+.blue {
+	background-color: $blue-color;
+}
+.future-bott {
+	margin-bottom: 30px;
+}
+.future-title-block {
+	padding: 0 50px;
+}
+.future-bott__title {
+	margin-bottom: 10px;
+	@include text (12px, 'Acrom-ExtraBold');
+	text-transform: uppercase;
+}
+.future-bott__subtitle {
+	margin-bottom: 30px;
+	@include text;
+}
+.future-bott__list {
+	padding: 0 30px;
+	list-style-type: square;
+}
+.future-bott__list-item {
+	margin-bottom: 15px;
+}
+.future-bott__list-title {
+	margin-bottom: 7px;
+	text-transform: uppercase;
+	@include text(9px, 'Acrom-ExtraBold');
+}
+.future-bott__list-text {
+	@include text;
+}
