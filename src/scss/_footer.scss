@@ -1,0 +1,31 @@
+.footer__wrap{
+    background-color: #181c27;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 20px 10px;
+    .footer__title, .footer__link, .footer__button{
+        @include text(4px, 'Acrom-ExtraBold');
+        color: #fff;
+        text-transform: uppercase;
+        text-decoration: none;
+        vertical-align: top;
+    }
+    .footer__mailto, .footer__contact{
+        text-decoration: none;
+        @include text(4px, 'Acrom-Regular');
+        color: #909092;
+    }
+    .footer__column{
+        flex-basis: 15%;
+    }
+    .footer__btn{
+        flex-grow: 1;
+        text-align: right;
+    }
+    .footer__button{
+        background-color: #181c27;
+        border: 1px solid #1a304c;
+        padding: 3px 5px;
+    }
+}

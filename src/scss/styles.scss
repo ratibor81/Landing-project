@@ -1,5 +1,7 @@
 @import '_fonts.scss';
-
+@import '_variables.scss';
+@import '_footer.scss';
+@import '_blocks16-20.scss';
 * {
   margin: 0;
   padding: 0;
@@ -10,3 +12,4 @@
   min-width: 320px;
   max-width: 878px;
 }
+
