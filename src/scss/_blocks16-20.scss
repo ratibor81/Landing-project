@@ -1,7 +1,10 @@
 .wrapper{
     padding: 0 35px;
+    @media(min-width: 480px){
+        padding: 0 55px;
+        }
 }
-.bonus{
+.bonus, .notice__block2{
     padding: 20px 25px;
 }
 .bonus__header, .notice__header{
@@ -10,51 +13,111 @@
     text-align: center;
     padding-top: 30px;
     padding-bottom: 10px;
+    @media(min-width: 480px){
+        font-size: 18px;
+        }
 }   
 .black-bg{
 background-color: #000;
 color: #fff;
 }
-.bonus__list, .notice__elem, .notice__price, .notice__text{
+.bonus__title, .notice__elem, .notice__price, .notice__text{
     @include text(9px, 'Acrom-Medium');
+    @media(min-width: 480px){
+        font-size: 13.5px;
+        }
 }
 
 .bonus__list{
     counter-reset: list;
 }
-.bonus__item::before {
-    @include text(17px, 'Acrom-ExtraBold');
-	counter-increment: list;
-	content: counter(list, decimal-leading-zero);
-	width: 1.7rem;
-    height: 1.7rem;
-    text-align: center;
-    display: inline-block;
-	margin-right: 0.75rem;
-	line-height: 1.7;
+.bonus__title{
+    padding-left: 40px;
+    text-indent: -9px;
+    padding-bottom: 10px;
+        &::before {
+        content: "\2501";
+        position: relative;
+        left: -15px;
+    }
+    @media(min-width: 480px){
+        padding-left: 60px;
+        text-indent: -14px;
+    }
 }
 .bonus__discr{
-padding-left: 40px;
+    padding-left: 35px;
+    text-indent: -6px;    
+    &::before {
+        content: "\220E";
+        color: #16ebfe;
+        position: relative;
+        left: -12px;
+    }
+    @media(min-width: 480px){
+            padding-left: 45px;
+            text-indent: -10px;
+    }
 }
 .bonus__item{
     @include text(9px, 'Acrom-ExtraBold');
-    
+    display: inline-flex;
+    &::before {
+        @include text(17px, 'Acrom-ExtraBold');
+        counter-increment: list;
+        content: counter(list, decimal-leading-zero);
+        margin-right: 0.75rem;
+        @media(min-width: 480px){
+            font-size: 25px;
+        }
+    }
+    @media(min-width: 480px){
+        font-size: 14px;
+    }
 }
-.bonus__discr, .notice__text{
+.bonus__discr, .notice__text, .notice__end{
     @include text(8px, 'Acrom-Regular');
     padding-bottom: 10px;
+    @media(min-width: 480px){
+        font-size: 13px;
+    }
 }
 .form{
     padding: 40px;
     box-shadow: 0px 7px 18px 3px rgba(238,238,238,1);
-    input::placeholder {
-        @include text(7px, 'Acrom-Regular');  
-        color: #000;  
+    input{
+        outline: none;
+        border: none;
+        border-bottom: 1px solid #eee;
+        &::placeholder {
+            @include text(7px, 'Acrom-Regular');  
+            color: #000;
+            @media(min-width: 480px){
+                font-size: 9px;
+            }
+        }
+        &:focus {
+            box-shadow: 3px 3px 10px 0px rgba(238,238,238,1);
+            
+        }
     }
 }
 .form__label{
     color: #a3a3a3;
     @include text(5px, 'Acrom-Bold');
+    @media(min-width: 480px){
+        font-size: 8px;
+    }
+}
+.notice__text-before{
+    text-indent: -6px;
+    &::before {
+        content: "\2571";
+        color: #000;
+        position: relative;
+        left: -15px;
+        top: 4px;
+    }
 }
 .notice__block{
     background-color: #052139;
@@ -65,8 +128,8 @@ padding-left: 40px;
     align-items: center;
     padding: 50px;
 }
-.notice__block2{
-    padding: 20px 25px;
+.notice__end{
+    text-align: right;
 }
 .notice__elem{
     flex-basis: 40%;
@@ -81,9 +144,15 @@ padding-left: 40px;
    }
 .big-char{
     @include text(16px, 'Acrom-ExtraBold');
+    @media(min-width: 480px){
+        font-size: 25px;
+    }
 }
 .notice__bold-text{
     @include text(9px, 'Acrom-Bold');
+    @media(min-width: 480px){
+        font-size: 14px;
+    }
 }
 .orange-text{
     color: $orange-color;
@@ -93,9 +162,9 @@ padding-left: 40px;
 }
 .registrate{
     position: relative;
-    width: 150px;
+    width: 140px;
     margin: auto;
-        &::before{
+    &::before{
         content: "GO";
         transform: rotate(90deg);
         @include text(68px, 'Acrom-ExtraBold');
@@ -104,8 +173,16 @@ padding-left: 40px;
         position: absolute;
         left: -80px;
         top: 35px;
+        @media(min-width: 480px){
+            font-size: 102px;
+            left: -130px;
+        }
     }
     h2{
         text-align: left
     }
+    @media(min-width: 480px){
+        width: 220px;
+    }
+
 }
