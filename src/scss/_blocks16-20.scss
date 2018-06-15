@@ -1,11 +1,11 @@
-.wrapper{
-    padding: 0 35px;
+.wrapper-block{
+    padding: 0 23px;
     @media(min-width: 480px){
-        padding: 0 55px;
+        padding: 0 43px;
         }
 }
 .bonus, .notice__block2{
-    padding: 20px 25px;
+    padding: 20px 40px;
 }
 .bonus__header, .notice__header{
     @include text(12px, 'Acrom-Regular');
@@ -27,7 +27,6 @@ color: #fff;
         font-size: 13.5px;
         }
 }
-
 .bonus__list{
     counter-reset: list;
 }
@@ -89,6 +88,7 @@ color: #fff;
         outline: none;
         border: none;
         border-bottom: 1px solid #eee;
+        width: 100%;
         &::placeholder {
             @include text(7px, 'Acrom-Regular');  
             color: #000;
@@ -98,8 +98,10 @@ color: #fff;
         }
         &:focus {
             box-shadow: 3px 3px 10px 0px rgba(238,238,238,1);
-            
         }
+    }
+    @media(min-width: 480px){
+        padding: 65px;
     }
 }
 .form__label{
@@ -118,6 +120,9 @@ color: #fff;
         left: -15px;
         top: 4px;
     }
+    @media(min-width: 480px){
+        text-indent: -14px;
+    }
 }
 .notice__block{
     background-color: #052139;
@@ -127,13 +132,18 @@ color: #fff;
     flex-wrap: wrap;
     align-items: center;
     padding: 50px;
+    @media(min-width: 480px){
+        padding: 75px;
+    }
 }
-.notice__end{
-    text-align: right;
-}
+
 .notice__elem{
     flex-basis: 40%;
     padding-bottom: 10px;
+    @include text(9px, 'Acrom-Medium');
+    @media(min-width: 480px){
+        font-size: 13px;
+    }
 }
 .notice__price{
     flex-basis: 40%;
@@ -159,6 +169,9 @@ color: #fff;
 }
 .ps__header{
     @include text(12px, 'Acrom-ExtraBold');
+    @media(min-width: 480px){
+        font-size: 20px;
+    }
 }
 .registrate{
     position: relative;
@@ -171,7 +184,7 @@ color: #fff;
         color: #f7f7f7;
         display: inline-block;
         position: absolute;
-        left: -80px;
+        left: -90px;
         top: 35px;
         @media(min-width: 480px){
             font-size: 102px;
@@ -184,5 +197,7 @@ color: #fff;
     @media(min-width: 480px){
         width: 220px;
     }
-
+}
+.notice__end{
+    text-align: right;
 }

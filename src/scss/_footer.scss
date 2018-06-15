@@ -3,7 +3,7 @@
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    padding: 20px 10px;
+    padding: 20px 12px;
     font-size: 0;
     .footer__title, .footer__link, .footer__button{
         @include text(3.5px, 'Acrom-ExtraBold');
@@ -37,5 +37,8 @@
         background-color: #181c27;
         border: 1px solid #1a304c;
         padding: 3px 5px;
+    }
+    @media(min-width: 480px){
+        padding: 30px 20px;
     }
 }

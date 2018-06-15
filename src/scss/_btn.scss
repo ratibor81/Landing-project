@@ -1,0 +1,21 @@
+.notice__btn, .form__btn{
+    background-color: $orange-color;
+    color: #fff;
+    text-transform: uppercase;
+    padding: 5px 15px;
+    border: none;
+    display: block;
+    margin: 10px auto;
+}
+.notice__btn{
+    @include text(7px, 'Acrom-ExtraBold');
+    @media(min-width: 480px){
+        font-size: 10px;
+    }
+}  
+.form__btn{
+    @include text(5px, 'Acrom-ExtraBold');
+    @media(min-width: 480px){
+        font-size: 8px;
+    }
+} 
