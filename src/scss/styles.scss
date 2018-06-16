@@ -9,12 +9,20 @@
 
 
 .wrapper {
-  min-width: 300px;
+  min-width: 320px;
   max-width: 878px;
   margin: 0 auto;
   padding: 0 12px;
+  @media (min-width: 768px){
+    padding: 0 65px;
+  }
+  @media (min-width: 960px){
+    padding: 0 80px;
+  }
+  @media (min-width: 1200px){
+    padding: 0 12px;
+  }
 }
-
 @import '_header.scss';
 @import '_reason.scss';
 @import '_facts.scss';

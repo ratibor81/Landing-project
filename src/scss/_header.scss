@@ -3,95 +3,245 @@ body {
   line-height: 1.5;
 }
 .header {
-  height: 100vh;
   margin-bottom: 35px;
-  // background-color: #181c27;
   background: radial-gradient(at  center 40%, #193049, #181c27);
   color: #fff;
   position: relative;
+  z-index: 0;
+  @media (min-width: 768px) {
+    margin-bottom: 112px;
+  }
+  @media (min-width: 768px) {
+    margin-bottom: 150px;
+  }
 } 
-// .header::before {
-//   width:100%;
-//   height: 100%;
-//   background: radial-gradient(at  center 40%, #193049, #fff);
-//   content: "";
-//   display: block;
-//   position: absolute;
-//   opacity:0.7;
-//   z-index: 100;
-// }
 .header-bg {
+  visibility: hidden;
   position: absolute;
-  @include text (80px, 'Acrom-ExtraBold');
-  color: rgba(0,0,0,0.3);
+  @include text (toRem(80px), 'Acrom-ExtraBold');
+  color: rgba(0,0,0,0.2);
   top: 50%;
   left: 50%;
   transform: translate(-50%,-50%);
-  // z-index: -1;
+  z-index: -1;
+  @media (min-width: 480px){
+    font-size: toRem(120px);
+  }
+  @media (min-width: 768px) {
+    font-size: toRem(235.53px);
+    visibility: visible
+  }
+  @media (min-width: 960px){
+    font-size: toRem(274.42px);
+  }
+  @media (min-width: 1200px) {
+    font-size: toRem(262.52px);
+  }
+  @media (min-width: 1440px){
+    font-size: toRem(315px);
+  }
 }
-.header-top {
+.desctop-nav {
+  display: none;
+  @media (min-width: 1200px){
+    display: flex;
+    justify-content: space-between;
+    padding: 25px 38px;
+  }
+}
+.main-nav {
   width: 100%;
-  padding-top: 12px; 
+  padding-top: 10px;
   display: flex;
   justify-content: space-between;
-}
-.logo__link {
-  text-decoration: none;
-  color: #fff;
-  font-weigth: bold;
-}
-.go {
-  background-color: #000;
-}
-.it {
-  background-color: $orange-color;
+  @media (min-width: 768px) {
+    padding: 25px 0; 
+  }
+  @media (min-width: 1200px) {
+    display: none;
+  }
 }
 .header-section {
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding: 30px 30px;
+  padding: 25px;
+  @media (min-width: 768px){
+    flex-direction: row;
+    padding: 35px 0 100px;
+  }
+  @media (min-width: 1200px){
+    padding: 40px 0 185px;
+  }
+  @media (min-width: 1440px){
+    padding: 40px 0 146px 0;
+  }
 }
-.header-left{
-  text-align: center;
-  margin-bottom: 90px;
+.dew-bg {
+  display: none;
+  position: absolute;
+  bottom: -1px;
+  right: 0;
+  z-index: -1;
+  background: url(../img/dudes.png) no-repeat;
+  width: 623px;
+  height: 585px;
+  @media (min-width: 768px) {
+    display: block;
+    background-size: 78%;
+    background-position: 104% 99%;
+  }
+  @media (min-width: 960px) {
+    background-size: 89%;
+  }
+  @media (min-width: 1200px) {
+    background-size: 100%;
+    background-position: 100% 100%;
+  }
+}
+
+.header-left {
+  flex-basis: 58%;
 }
 .header-left__title {
+  text-transform: uppercase;
   margin-bottom: 25px;
-  @include text (20px, 'Acrom-Bold');
-  text-transform: uppercase;
+  line-height: 1.2;
+  @include text (toRem(20px), 'Acrom-Bold');
+  @media (min-width: 480px){
+    font-size: toRem(30px);
+  }
+  @media (min-width: 768px){
+    font-size: toRem(44.86px);
+    margin-bottom: 40px;
+  }
+  @media (min-width: 960px){
+    font-size: toRem(50.08px);
+  }
+  @media (min-width: 1200px) {
+    margin-bottom: 30px;
+    font-size: toRem(50px);
+  }
+  @media (min-width: 1440px) {
+    margin-bottom: 40px;
+    font-size: toRem(60px);
+  }
 }
-
-.header-left__subtitle, .header-right__subtitle {
-  font-size: $base-size;
-  text-transform: uppercase;
+.test {
+  @media (min-width: 768px){
+    width: 50%;
+    margin-left: 50px;
+  }
 }
-
+.hidden-logo {
+  text-align: center;
+  @include text (toRem(80px), 'Acrom-ExtraBold');
+  color: rgba(0,0,0,0.2);
+  @media (min-width: 480px){
+    font-size: toRem(120px);
+  }
+  @media (min-width: 768px) {
+    display: none;
+  }
+}
+@media (min-width: 768px){
+  .dash_after::after {
+  content: "";
+  display: inline-block;
+  background-color: #fff;
+  height: 6px;
+  width: 60px;
+  margin-left: 20px;
+  vertical-align: middle;
+}
+.dash_before {
+  display: block;
+}
+.dash_before::before {
+  content: '';
+  display: inline-block;
+  background-color: #fff;
+  height: 6px;
+  width: 60px;
+  margin-right: 20px;
+  vertical-align: middle;
+}
+}
 .header-left__subtitle {
-  font-family: 'Acrom-Bold';
+  text-transform: uppercase;
+  @include text ( toRem($base-size), 'Acrom-Bold');
+  @media (min-width: 480px){
+    font-size: toRem(13.05px);
+  }
+  @media (min-width: 768px){
+    font-size: toRem(7.85px);
+  }
+  @media (min-width: 960px){
+    font-size: toRem(9.81px);
+  }
+  @media (min-width: 1200px){
+    font-size: toRem(8.75px);
+  }
+  @media (min-width: 1440px){
+    font-size: toRem(10.5px);
+  }
 }
-
+.header-right {
+  flex-basis: 23%;
+}
 .header-right__subtitle {
-  font-family:  'Acrom-ExtraBold';
-  margin-bottom: 8px;
+  @include text(toRem($base-size), 'Acrom-ExtraBold');
+  text-transform: uppercase;
+  @media (min-width: 480px){
+    font-size: toRem(13.5px);
+  }
+  @media (min-width: 768px){
+    font-size: toRem(10.09px);
+    margin-bottom: 10px;
+  }
+  @media (min-width: 960px){
+    font-size: toRem(12.62px);
+  }
+  @media (min-width: 1200px){
+    font-size: toRem(11.25px);
+  }
+  @media (min-width: 1440px){
+    font-size: toRem(13.5px);
+    margin-bottom: 15px;
+  }
 }
 
 .header-right__text {
-  margin-bottom: 25px;
   @include text;
+  margin-bottom: 20px;
+  @media (min-width: 480px){
+    font-size: toRem(13.05px);
+  }
+  @media (min-width: 768px){
+    font-size: toRem(8.97px);
+  }
+  @media (min-width: 960px){
+    font-size: toRem(11.22px);
+  }
+  @media (min-width: 1200px){
+    font-size: toRem(10px);
+  }
+  @media (min-width: 1440px){
+    font-size: toRem(12px);
+  }
 }
-.header-left__btn, .header-right__btn {
-  padding: 15px 25px;
-  border: none;
-  background-color: $orange-color;
-  color: #fff;
-  @include text (8px, 'Acrom-ExtraBold')
-  text-transform: uppercase;
+.header-left__btn {
+  display: none;
+  @media (min-width: 768px) {
+    display: block;
+    margin-top: 35px;
+  }
 }
 .header-right__btn {
   display: block;
   margin: 0 auto;
-}
-.header-left__btn {
-  display: none;
+  @media (min-width: 768px) {
+    display: none;
+  }
 }
