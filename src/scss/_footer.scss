@@ -1,3 +1,8 @@
+.footer{
+    min-width: 320px;
+    max-width: 878px;
+    margin: auto;
+}
 .footer__wrap{
     background-color: #181c27;
     display: flex;
@@ -5,7 +10,14 @@
     flex-wrap: wrap;
     padding: 20px 12px;
     font-size: 0;
-    .footer__title, .footer__link, .footer__button{
+    @media(min-width: 480px){
+        padding: 30px 20px;
+    }
+    @media(min-width: 960px){
+        padding: 30px 65px;
+    }
+}
+.footer__title, .footer__link, .footer__button{
         @include text(3.5px, 'Acrom-ExtraBold');
         color: #fff;
         text-transform: uppercase;
@@ -13,32 +25,101 @@
         vertical-align: top;
         @media(min-width: 480px){
 			font-size: 5px;
-		}
-    }
-    .footer__title{
-        padding-bottom: 3px;
-    }
-    .footer__mailto, .footer__contact{
-        text-decoration: none;
-        @include text(3.5px, 'Acrom-Regular');
-        color: #909092;
-        @media(min-width: 480px){
-            font-size: 5px;
+        }
+        @media(min-width: 768px){
+			font-size: 8px;
+        }
+        @media(min-width: 960px){
+            font-size: 10px;
+        }
+        @media(min-width: 1200px){
+            font-size: 9px;
         }
     }
-    .footer__column{
-        flex-basis: 15%;
+.footer__title{
+    padding-bottom: 3px;
+    @media(min-width: 768px){
+        padding-bottom: 8px;
     }
-    .footer__btn{
-        flex-grow: 1;
-        text-align: right;
-    }
-    .footer__button{
-        background-color: #181c27;
-        border: 1px solid #1a304c;
-        padding: 3px 5px;
-    }
+}
+.footer__mailto, .footer__contact{
+    text-decoration: none;
+    @include text(3.5px, 'Acrom-Regular');
+    color: #909092;
     @media(min-width: 480px){
-        padding: 30px 20px;
+        font-size: 5px;
     }
+    @media(min-width: 768px){
+        font-size: 8px;
+    }
+    @media(min-width: 960px){
+        font-size: 10px;
+    }
+    @media(min-width: 1200px){
+        font-size: 9px;
+    }
+}
+.footer__column{
+    flex-basis: 15%;
+}
+.footer__btn{
+    flex-grow: 1;
+    text-align: right;
+}
+.footer__button{
+    background-color: #181c27;
+    border: 1px solid #1a304c;
+    padding: 3px 5px;
+    @media(min-width: 768px){
+        padding: 10px 15px;
+    }
+}
+.footer__logo{
+    width: 25px;
+    height: auto;
+    @media(min-width: 768px){
+        width: 60px;
+    }
+    @media(min-width: 960px){
+        width: 70px;
+    }
+}
+.footer__copyright{
+    list-style: none;
+    background-color: #202020;
+    display: flex;
+    line-height: 0;
+    padding: 5px;
+    @media(min-width: 480px){
+        padding: 5px 20px;
+    }
+    @media(min-width: 960px){
+        padding: 5px 65px;
+    }
+}
+.footer__list-link{
+    color: #4c4c4f;
+    text-decoration: none;
+
+    @include text(4px, 'Acrom-Regular');
+    @media(min-width: 768px){
+        font-size: 6px;
+    }
+    @media(min-width: 960px){
+        font-size: 8px;
+    }
+}
+.footer__list{
+    flex-basis: 20%;
+}
+.footer__ra{
+    width: 10px;
+    height: auto;
+    flex-grow: 2;
+    @media(min-width: 768px){
+        width: 20px;
+    }
+}
+.footer__right{
+    flex-basis: 35%;
 }

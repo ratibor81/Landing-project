@@ -3,12 +3,26 @@
     @media(min-width: 480px){
         padding: 0 43px;
         }
+    @media(min-width: 768px){
+        display: flex;
+        flex-wrap: wrap;
+        padding: 0;
+        justify-content: space-between;
+    } 
 }
-.bonus, .notice__block2{
+.bonus, .notice__block2, .notice__block3{
     padding: 20px 40px;
+    @media(min-width: 768px){
+        flex-basis: 45%;
+    }  
 }
-.bonus__header, .notice__header{
-    @include text(12px, 'Acrom-Regular');
+.bonus{
+    @media(min-width: 768px){
+        padding: 20px 0px;
+    }
+}
+.bonus__header, .notice__header, .notice__header2{
+    @include text(12px, 'Acrom-Bold');
     text-transform: uppercase;
     text-align: center;
     padding-top: 30px;
@@ -16,6 +30,10 @@
     @media(min-width: 480px){
         font-size: 18px;
         }
+    @media(min-width: 768px){
+        font-size: 26px;
+        text-align: left;
+    }
 }   
 .black-bg{
 background-color: #000;
@@ -23,12 +41,15 @@ color: #fff;
 }
 .bonus__title, .notice__elem, .notice__price, .notice__text{
     @include text(9px, 'Acrom-Medium');
-    @media(min-width: 480px){
+    @media (min-width : 480px) and (max-width : 768px){
         font-size: 13.5px;
-        }
+    }
 }
 .bonus__list{
     counter-reset: list;
+    @media(min-width: 480px){
+        padding-right: 60px;
+    }
 }
 .bonus__title{
     padding-left: 40px;
@@ -43,6 +64,9 @@ color: #fff;
         padding-left: 60px;
         text-indent: -14px;
     }
+    @media(min-width: 480px){
+        text-indent: -9px;
+    }
 }
 .bonus__discr{
     padding-left: 35px;
@@ -54,8 +78,12 @@ color: #fff;
         left: -12px;
     }
     @media(min-width: 480px){
-            padding-left: 45px;
-            text-indent: -10px;
+        padding-left: 45px;
+        text-indent: -10px;
+    }
+    @media(min-width: 768px){
+        padding-left: 48px;
+        text-indent: -6px;
     }
 }
 .bonus__item{
@@ -70,49 +98,26 @@ color: #fff;
             font-size: 25px;
         }
     }
-    @media(min-width: 480px){
+    @media (min-width : 480px) and (max-width : 768px){
         font-size: 14px;
     }
 }
 .bonus__discr, .notice__text, .notice__end{
     @include text(8px, 'Acrom-Regular');
-    padding-bottom: 10px;
-    @media(min-width: 480px){
+        padding-bottom: 10px;
+    @media (min-width : 480px) and (max-width : 768px){
         font-size: 13px;
     }
 }
-.form{
-    padding: 40px;
-    box-shadow: 0px 7px 18px 3px rgba(238,238,238,1);
-    input{
-        outline: none;
-        border: none;
-        border-bottom: 1px solid #eee;
-        width: 100%;
-        &::placeholder {
-            @include text(7px, 'Acrom-Regular');  
-            color: #000;
-            @media(min-width: 480px){
-                font-size: 9px;
-            }
-        }
-        &:focus {
-            box-shadow: 3px 3px 10px 0px rgba(238,238,238,1);
-        }
-    }
-    @media(min-width: 480px){
-        padding: 65px;
-    }
-}
-.form__label{
-    color: #a3a3a3;
-    @include text(5px, 'Acrom-Bold');
-    @media(min-width: 480px){
-        font-size: 8px;
-    }
+.notice{
+    @media(min-width: 768px){
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    } 
 }
 .notice__text-before{
-    text-indent: -6px;
+    text-indent: -9px;
     &::before {
         content: "\2571";
         color: #000;
@@ -120,9 +125,17 @@ color: #fff;
         left: -15px;
         top: 4px;
     }
-    @media(min-width: 480px){
+    @media (min-width : 480px) and (max-width : 768px){
         text-indent: -14px;
     }
+}
+.notice-wrapper{
+    @media(min-width: 768px){
+       display: flex;
+       flex-wrap: wrap;
+       justify-content: space-between;
+       padding: 60px 0;
+     }
 }
 .notice__block{
     background-color: #052139;
@@ -132,16 +145,18 @@ color: #fff;
     flex-wrap: wrap;
     align-items: center;
     padding: 50px;
-    @media(min-width: 480px){
+    @media (min-width : 480px) and (max-width : 768px){
         padding: 75px;
     }
+    @media(min-width: 480px){
+        flex-basis: 50%;
+    }
 }
-
 .notice__elem{
     flex-basis: 40%;
     padding-bottom: 10px;
     @include text(9px, 'Acrom-Medium');
-    @media(min-width: 480px){
+    @media (min-width : 480px) and (max-width : 768px){
         font-size: 13px;
     }
 }
@@ -160,7 +175,7 @@ color: #fff;
 }
 .notice__bold-text{
     @include text(9px, 'Acrom-Bold');
-    @media(min-width: 480px){
+    @media (min-width : 480px) and (max-width : 768px){
         font-size: 14px;
     }
 }
@@ -169,8 +184,36 @@ color: #fff;
 }
 .ps__header{
     @include text(12px, 'Acrom-ExtraBold');
+    padding: 0 40px;
     @media(min-width: 480px){
         font-size: 20px;
+    }
+    @media(min-width: 768px){
+        padding: 0;
+        font-size: 16px;
+        flex-basis: 10%;
+        padding-top: 20px;
+        text-align: end;
+        position: relative;
+        left: 25px;
+    }
+}
+.notice__header2{
+    @media(min-width: 768px){
+        position: relative;
+    }
+}
+.notice__header{
+    @media(min-width: 768px){
+    position: relative;
+    right: -425px;
+    top: 75px;
+    }
+    @media(min-width: 960px){
+    right: -480px;
+    }
+    @media(min-width: 960px){
+        right: -500px;
     }
 }
 .registrate{
@@ -184,20 +227,34 @@ color: #fff;
         color: #f7f7f7;
         display: inline-block;
         position: absolute;
-        left: -90px;
-        top: 35px;
+        left: -80px;
+        top: 32px;
         @media(min-width: 480px){
             font-size: 102px;
             left: -130px;
         }
+        @media(min-width: 768px){
+            font-size: 146px;
+            left: 125px;
+        }
     }
     h2{
-        text-align: left
+        text-align: left;
     }
     @media(min-width: 480px){
         width: 220px;
     }
+    @media(min-width: 768px){
+        margin: 0;
+        width: 265px;
+        padding-bottom: 45px;
+    }
+    span{
+        @media(min-width: 768px){ 
+        display: none;
+        }
+    }
 }
-.notice__end{
+.notice__end, .footer__right{
     text-align: right;
 }

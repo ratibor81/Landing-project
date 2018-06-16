@@ -6,11 +6,15 @@
     border: none;
     display: block;
     margin: 10px auto;
+    box-shadow: 5px 7px 20px -7px rgba(255,107,8,1);
 }
 .notice__btn{
     @include text(7px, 'Acrom-ExtraBold');
-    @media(min-width: 480px){
+    @media (min-width : 480px) and (max-width : 768px){
         font-size: 10px;
+    }
+    @media (min-width : 960px) and (max-width : 1200px){
+        font-size: 9px;
     }
 }  
 .form__btn{
@@ -18,4 +22,12 @@
     @media(min-width: 480px){
         font-size: 8px;
     }
+    @media (min-width : 960px) and (max-width : 1200px){
+        font-size: 9px;
+    }
 } 
+.button--hover:hover{
+    background-color: $blue-color;
+    box-shadow: 5px 7px 20px -7px rgba(116,207,196,1);
+    border: 0.5px solid rgb(116, 207, 196)
+}
