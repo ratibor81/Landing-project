@@ -8,6 +8,7 @@
         flex-wrap: wrap;
         padding: 0;
         justify-content: space-between;
+        align-items: center;
     } 
 }
 .bonus, .notice__block2, .notice__block3{
@@ -34,16 +35,28 @@
         font-size: 26px;
         text-align: left;
     }
+    @media(min-width: 960px){
+        font-size: 33px;
+    }
+    @media(min-width: 1200px){
+        font-size: 30px;
+    }
 }   
 .black-bg{
-background-color: #000;
-color: #fff;
+    background-color: #000;
+    color: #fff;
 }
 .bonus__title, .notice__elem, .notice__price, .notice__text{
     @include text(9px, 'Acrom-Medium');
     @media (min-width : 480px) and (max-width : 768px){
         font-size: 13.5px;
     }
+    @media(min-width: 960px){
+        font-size: 11px;
+    }
+    @media(min-width: 1200px){
+        font-size: 10px;
+    }    
 }
 .bonus__list{
     counter-reset: list;
@@ -60,30 +73,36 @@ color: #fff;
         position: relative;
         left: -15px;
     }
-    @media(min-width: 480px){
+    @media(min-width: 480px) and (max-width: 768px){
         padding-left: 60px;
         text-indent: -14px;
     }
-    @media(min-width: 480px){
-        text-indent: -9px;
+    @media(min-width: 960px){
+        text-indent: -11px;
     }
 }
 .bonus__discr{
-    padding-left: 35px;
-    text-indent: -6px;    
+    padding-left: 36px;
+    text-indent: -7px;    
     &::before {
         content: "\220E";
-        color: #16ebfe;
+        color: $blue-color;
         position: relative;
         left: -12px;
+        @media(min-width: 960px){
+            left: -23px;
+        }
     }
     @media(min-width: 480px){
-        padding-left: 45px;
+        padding-left: 47px;
         text-indent: -10px;
     }
     @media(min-width: 768px){
-        padding-left: 48px;
+        padding-left: 50px;
         text-indent: -6px;
+    }
+    @media(min-width: 768px){
+        text-indent: -8px;
     }
 }
 .bonus__item{
@@ -97,10 +116,24 @@ color: #fff;
         @media(min-width: 480px){
             font-size: 25px;
         }
+        @media(min-width: 960px){
+            font-size: 21px;
+            margin-right: 20px;
+        }
+        @media(min-width: 1200px){
+            font-size: 19px;
+        }    
     }
     @media (min-width : 480px) and (max-width : 768px){
         font-size: 14px;
     }
+    @media(min-width: 960px){
+        font-size: 11px;
+    }
+    @media(min-width: 1200px){
+        font-size: 10px;
+    }  
+    
 }
 .bonus__discr, .notice__text, .notice__end{
     @include text(8px, 'Acrom-Regular');
@@ -108,6 +141,12 @@ color: #fff;
     @media (min-width : 480px) and (max-width : 768px){
         font-size: 13px;
     }
+    @media(min-width: 960px){
+        font-size: 11px;
+    }
+    @media(min-width: 1200px){
+        font-size: 10px;
+    }  
 }
 .notice{
     @media(min-width: 768px){
@@ -149,7 +188,7 @@ color: #fff;
         padding: 75px;
     }
     @media(min-width: 480px){
-        flex-basis: 50%;
+        flex-basis: 45%;
     }
 }
 .notice__elem{
@@ -158,6 +197,9 @@ color: #fff;
     @include text(9px, 'Acrom-Medium');
     @media (min-width : 480px) and (max-width : 768px){
         font-size: 13px;
+    }
+    @media (min-width : 960px) and (max-width : 1200px){
+        font-size: 10px;
     }
 }
 .notice__price{
@@ -178,6 +220,12 @@ color: #fff;
     @media (min-width : 480px) and (max-width : 768px){
         font-size: 14px;
     }
+    @media(min-width: 960px){
+        font-size: 11px;
+    }
+    @media(min-width: 1200px){
+        font-size: 10px;
+    }    
 }
 .orange-text{
     color: $orange-color;
@@ -196,6 +244,12 @@ color: #fff;
         text-align: end;
         position: relative;
         left: 25px;
+    }
+    @media(min-width: 960px){
+        font-size: 21px;
+    }
+    @media(min-width: 1200px){
+        font-size: 19px;
     }
 }
 .notice__header2{
@@ -237,6 +291,13 @@ color: #fff;
             font-size: 146px;
             left: 125px;
         }
+        @media(min-width: 960px){
+            font-size: 182px;
+            left: 215px;
+        }
+        @media(min-width: 1200px){
+            font-size: 162px;
+        }    
     }
     h2{
         text-align: left;
@@ -249,9 +310,15 @@ color: #fff;
         width: 265px;
         padding-bottom: 45px;
     }
+    @media(min-width: 960px){
+        flex-basis: 43%;
+        padding-bottom: 45px;
+    }
     span{
-        @media(min-width: 768px){ 
+    position: relative;
+    @media(min-width: 768px) and (max-width: 960px){ 
         display: none;
+
         }
     }
 }

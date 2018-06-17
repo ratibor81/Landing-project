@@ -12,6 +12,9 @@
             @media(min-width: 480px){
                 font-size: 9px;
             }
+            @media(min-width: 960px) and (max-width: 1200px){
+                font-size: 10px;
+            }
         }
         &:focus {
             box-shadow: 3px 3px 10px 0px rgba(238,238,238,1);
@@ -23,11 +26,20 @@
     @media(min-width: 768px){
         flex-basis: 45%;
     }
+    @media(min-width: 960px){
+        padding: 60px;
+    }
 }
 .form__label{
     color: #a3a3a3;
     @include text(5px, 'Acrom-Bold');
     @media(min-width: 480px){
         font-size: 8px;
+    }
+    @media(min-width: 960px){
+        font-size: 9px;
+    }
+    @media(min-width: 1200px){
+        font-size: 7px;
     }
 }
