@@ -15,6 +15,11 @@ $base-size: 9px;
   color: #fff;
   @include text (8px, 'Acrom-ExtraBold');
   text-transform: uppercase;
+  transition: .6s;
+}
+.orange-btn:hover {
+  background-color: #FF9408;
+  cursor: pointer;
 }
 @mixin img ($src) {
 	background: url(../img/#{$src}.jpg);

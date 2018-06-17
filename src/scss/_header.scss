@@ -15,6 +15,39 @@ body {
     margin-bottom: 150px;
   }
 } 
+.social {
+  padding: 10px;
+  position: absolute;
+}
+
+.social-desctop {
+  display: none;
+  @media (min-width: 1200px) {
+    display: block;
+    bottom: 20px;
+    right: 20px;
+  }
+}
+.social-main {
+  display: none;
+  bottom: 33%;
+  right: -7px;
+  @media (min-width: 768px) and (max-width: 1199px) {
+    display: block;
+  }
+}
+.social-icon {
+  width: 15px;
+  height: 15px;
+  display: inline-block;
+}
+.social-icon:hover {
+  opacity: 0.7;
+}
+.fb {
+  width: 8px;
+  margin-right: 25px;
+}
 .header-bg {
   visibility: hidden;
   position: absolute;
@@ -61,13 +94,20 @@ body {
     display: none;
   }
 }
+.menu:hover {
+  cursor: pointer;
+}
 .header-section {
   position: relative;
+  // max-width: 80%;
+  // margin: auto;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   padding: 25px;
   @media (min-width: 768px){
+    // max-width: 100%;
+    margin: 0;
     flex-direction: row;
     padding: 35px 0 100px;
   }
@@ -102,10 +142,18 @@ body {
 }
 
 .header-left {
-  flex-basis: 58%;
+  width: 81%;
+  margin: auto;
+  @media (min-width: 768px) {
+    width: 100%;
+    margin: 0;
+    flex-basis: 58%;
+  }
+  // flex-basis: 58%;
 }
 .header-left__title {
   text-transform: uppercase;
+  text-align: center;
   margin-bottom: 25px;
   line-height: 1.2;
   @include text (toRem(20px), 'Acrom-Bold');
@@ -113,6 +161,7 @@ body {
     font-size: toRem(30px);
   }
   @media (min-width: 768px){
+    text-align: left;
     font-size: toRem(44.86px);
     margin-bottom: 40px;
   }
@@ -147,28 +196,29 @@ body {
 }
 @media (min-width: 768px){
   .dash_after::after {
-  content: "";
-  display: inline-block;
-  background-color: #fff;
-  height: 6px;
-  width: 60px;
-  margin-left: 20px;
-  vertical-align: middle;
-}
-.dash_before {
-  display: block;
-}
-.dash_before::before {
-  content: '';
-  display: inline-block;
-  background-color: #fff;
-  height: 6px;
-  width: 60px;
-  margin-right: 20px;
-  vertical-align: middle;
-}
+    content: "";
+    display: inline-block;
+    background-color: #fff;
+    height: 6px;
+    width: 60px;
+    margin-left: 20px;
+    vertical-align: middle;
+  }
+  .dash_before {
+    display: block;
+  }
+  .dash_before::before {
+    content: '';
+    display: inline-block;
+    background-color: #fff;
+    height: 6px;
+    width: 60px;
+    margin-right: 20px;
+    vertical-align: middle;
+  }
 }
 .header-left__subtitle {
+  position: relative;
   text-transform: uppercase;
   @include text ( toRem($base-size), 'Acrom-Bold');
   @media (min-width: 480px){
@@ -187,8 +237,33 @@ body {
     font-size: toRem(10.5px);
   }
 }
+.header-left__subtitle::before {
+  content: '<';
+  display: inline-block;
+  color: $blue-color;
+  font-size: toRem(12.5px);
+  position: absolute;
+  left: -20px;
+  top: -2px;
+}
+.header-left__subtitle::after {
+  content: '/>';
+  display: inline-block;
+  color: $blue-color;
+  font-size: toRem(12.5px);
+  position: absolute;
+  right: -20px;
+  bottom: -2px;
+}
 .header-right {
-  flex-basis: 23%;
+  width: 79%;
+  margin: auto;
+  @media (min-width: 768px) {
+    width: 100%;
+    margin: 0;
+    flex-basis: 23%;
+  }
+ 
 }
 .header-right__subtitle {
   @include text(toRem($base-size), 'Acrom-ExtraBold');
