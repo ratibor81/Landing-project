@@ -11,10 +11,13 @@
 }
 .notice__btn{
     @include text(7px, 'Acrom-ExtraBold');
-    @media (min-width : 480px) and (max-width : 768px){
+    @media(min-width : 480px) and (max-width : 768px){
         font-size: 10px;
     }
-    @media (min-width : 960px) and (max-width : 1200px){
+    @media(min-width : 960px) and (max-width : 1200px){
+        font-size: 9px;
+    }
+    @media(min-width : 1400px){
         font-size: 9px;
     }
 }  

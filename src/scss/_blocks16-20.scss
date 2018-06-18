@@ -41,6 +41,9 @@
     @media(min-width: 1200px){
         font-size: 30px;
     }
+    @media(min-width: 1440px){
+        font-size: 36px;
+    }
 }   
 .black-bg{
     background-color: #000;
@@ -56,6 +59,9 @@
     }
     @media(min-width: 1200px){
         font-size: 10px;
+    } 
+    @media(min-width: 1440px){
+        font-size: 12px;
     }    
 }
 .bonus__list{
@@ -122,7 +128,10 @@
         }
         @media(min-width: 1200px){
             font-size: 19px;
-        }    
+        }
+        @media(min-width: 1200px){
+            font-size: 22px;
+        }      
     }
     @media (min-width : 480px) and (max-width : 768px){
         font-size: 14px;
@@ -133,6 +142,9 @@
     @media(min-width: 1200px){
         font-size: 10px;
     }  
+    @media(min-width: 1440px){
+        font-size: 12px;
+    } 
     
 }
 .bonus__discr, .notice__text, .notice__end{
@@ -142,11 +154,14 @@
         font-size: 13px;
     }
     @media(min-width: 960px){
-        font-size: 11px;
+        font-size: 10px;
     }
     @media(min-width: 1200px){
-        font-size: 10px;
-    }  
+        font-size: 9px;
+    } 
+    @media(min-width: 1440px){
+        font-size: 11px;
+    } 
 }
 .notice{
     @media(min-width: 768px){
@@ -174,6 +189,7 @@
        flex-wrap: wrap;
        justify-content: space-between;
        padding: 60px 0;
+       position: relative;
      }
 }
 .notice__block{
@@ -184,12 +200,20 @@
     flex-wrap: wrap;
     align-items: center;
     padding: 50px;
+
     @media (min-width : 480px) and (max-width : 768px){
         padding: 75px;
     }
     @media(min-width: 480px){
         flex-basis: 45%;
     }
+    @media(min-width: 960px){
+        padding: 70px;
+    }
+    @media(min-width: 1440px){
+        padding: 75px;
+    }
+
 }
 .notice__elem{
     flex-basis: 40%;
@@ -199,7 +223,10 @@
         font-size: 13px;
     }
     @media (min-width : 960px) and (max-width : 1200px){
-        font-size: 10px;
+        font-size: 11px;
+    }
+    @media (min-width : 1440px){
+        font-size: 12px;
     }
 }
 .notice__price{
@@ -225,7 +252,10 @@
     }
     @media(min-width: 1200px){
         font-size: 10px;
-    }    
+    }   
+    @media(min-width: 1440px){
+        font-size: 12px;
+    } 
 }
 .orange-text{
     color: $orange-color;
@@ -251,6 +281,9 @@
     @media(min-width: 1200px){
         font-size: 19px;
     }
+    @media(min-width: 1440px){
+        font-size: 22px;
+    }
 }
 .notice__header2{
     @media(min-width: 768px){
@@ -259,15 +292,12 @@
 }
 .notice__header{
     @media(min-width: 768px){
-    position: relative;
-    right: -425px;
-    top: 75px;
+    position: absolute;
+    right: 119px;
+    top: 10px;
     }
-    @media(min-width: 960px){
-    right: -480px;
-    }
-    @media(min-width: 960px){
-        right: -500px;
+    @media(min-width: 1200px){
+        right: 80px;
     }
 }
 .registrate{
@@ -276,28 +306,34 @@
     margin: auto;
     &::before{
         content: "GO";
-        transform: rotate(90deg);
         @include text(68px, 'Acrom-ExtraBold');
+        writing-mode: vertical-rl;
         color: #f7f7f7;
-        display: inline-block;
         position: absolute;
         left: -80px;
-        top: 32px;
+        top: 20px;
         @media(min-width: 480px){
             font-size: 102px;
-            left: -130px;
+            left: -115px;
         }
         @media(min-width: 768px){
             font-size: 146px;
-            left: 125px;
+            left: 170px;
         }
         @media(min-width: 960px){
             font-size: 182px;
-            left: 215px;
+            left: 225px;
         }
         @media(min-width: 1200px){
             font-size: 162px;
+            left: 180px;
+            top: 45px;
         }    
+        @media(min-width: 1440px){
+            font-size: 195px;
+            left: 208px;
+            top: 6px;
+        } 
     }
     h2{
         text-align: left;
@@ -318,7 +354,6 @@
     position: relative;
     @media(min-width: 768px) and (max-width: 960px){ 
         display: none;
-
         }
     }
 }

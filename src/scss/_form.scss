@@ -1,25 +1,6 @@
 .form{
     padding: 40px;
     box-shadow: 0px 7px 18px 3px rgba(238,238,238,1);
-    input{
-        outline: none;
-        border: none;
-        border-bottom: 1px solid #eee;
-        width: 100%;
-        &::placeholder {
-            @include text(7px, 'Acrom-Regular');  
-            color: #000;
-            @media(min-width: 480px){
-                font-size: 9px;
-            }
-            @media(min-width: 960px) and (max-width: 1200px){
-                font-size: 10px;
-            }
-        }
-        &:focus {
-            box-shadow: 3px 3px 10px 0px rgba(238,238,238,1);
-        }
-    }
     @media(min-width: 480px){
         padding: 65px;
     }
@@ -28,6 +9,28 @@
     }
     @media(min-width: 960px){
         padding: 60px;
+    }
+    @media(min-width: 1440px){
+        padding: 70px;
+    }
+}
+input{
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #eee;
+    width: 100%;
+    &::placeholder {
+        @include text(7px, 'Acrom-Regular');  
+        color: #000;
+        @media(min-width: 480px){
+            font-size: 9px;
+        }
+        @media(min-width: 960px) and (max-width: 1200px){
+            font-size: 10px;
+        }
+    }
+    &:focus {
+        box-shadow: 3px 3px 10px 0px rgba(238,238,238,1);
     }
 }
 .form__label{
@@ -39,7 +42,7 @@
     @media(min-width: 960px){
         font-size: 9px;
     }
-    @media(min-width: 1200px){
+    @media(min-width: 1200px) and (max-width: 1400px){
         font-size: 7px;
     }
 }
