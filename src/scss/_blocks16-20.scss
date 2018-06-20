@@ -118,7 +118,7 @@
         @include text(17px, 'Acrom-ExtraBold');
         counter-increment: list;
         content: counter(list, decimal-leading-zero);
-        margin-right: 0.75rem;
+        margin-right: 12px;
         @media(min-width: 480px){
             font-size: 25px;
         }
@@ -240,6 +240,13 @@
     @media(min-width: 480px){
         font-size: 25px;
     }
+    @media(min-width: 960px){
+    font-size: 32px;
+    }
+    @media(min-width: 1200px){
+        font-size: 35px;
+    }
+
 }
 .notice__bold-text{
     @include text(9px, 'Acrom-Bold');
