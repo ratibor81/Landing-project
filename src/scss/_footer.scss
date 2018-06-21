@@ -1,8 +1,6 @@
 .footer{
     margin: auto;
     background-color: #181c27;
-    min-width: 320px;
-    max-width: 878px;  
 }
 .footer__wrap{
     display: flex;
@@ -10,6 +8,9 @@
     flex-wrap: wrap;
     font-size: 0;
     padding: 20px 12px;
+    min-width: 320px;
+    max-width: 878px; 
+    margin: auto; 
     @media(min-width: 480px){
         padding: 30px 20px;
     }
@@ -90,12 +91,17 @@
         width: 70px;
     }
 }
+.copyright-wrap{
+    background-color: #202020;
+}
 .footer__copyright{
     list-style: none;
-    background-color: #202020;
     display: flex;
     line-height: 0;
     padding: 5px 12px;
+    min-width: 320px;
+    max-width: 878px; 
+    margin:auto; 
     @media(min-width: 480px){
         padding: 5px 20px;
     }
