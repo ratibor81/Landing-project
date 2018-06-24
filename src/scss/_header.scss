@@ -3,155 +3,69 @@ body {
   line-height: 1.5;
 }
 .header {
-  margin-bottom: 35px;
+  position: relative;
   background: radial-gradient(at  center 40%, #193049, #181c27);
   color: #fff;
-  position: relative;
   z-index: 0;
-  @media (min-width: 768px) {
-    margin-bottom: 112px;
-  }
-  @media (min-width: 768px) {
-    margin-bottom: 150px;
-  }
-} 
-.social {
-  padding: 10px;
-  position: absolute;
 }
-
-.social-desctop {
+.header-nav {
   display: none;
-  @media (min-width: 1200px) {
-    display: block;
-    bottom: 20px;
-    right: 20px;
-  }
-}
-.social-main {
-  display: none;
-  bottom: 33%;
-  right: -7px;
-  @media (min-width: 768px) and (max-width: 1199px) {
-    display: block;
-  }
-}
-.social-icon {
-  width: 15px;
-  height: 15px;
-  display: inline-block;
-}
-.social-icon:hover {
-  opacity: 0.7;
-}
-.fb {
-  width: 8px;
-  margin-right: 25px;
-}
-.header-bg {
-  visibility: hidden;
-  position: absolute;
-  @include text (toRem(80px), 'Acrom-ExtraBold');
-  color: rgba(0,0,0,0.2);
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%,-50%);
-  z-index: -1;
-  @media (min-width: 480px){
-    font-size: toRem(120px);
-  }
+  position: relative;
+  margin: auto;
   @media (min-width: 768px) {
-    font-size: toRem(235.53px);
-    visibility: visible
+    display: flex;
+    max-width: 878px;
+    justify-content: space-between;
+    padding: 25px 65px;
   }
   @media (min-width: 960px){
-    font-size: toRem(274.42px);
-  }
-  @media (min-width: 1200px) {
-    font-size: toRem(262.52px);
-  }
-  @media (min-width: 1440px){
-    font-size: toRem(315px);
-  }
-}
-.desctop-nav {
-  display: none;
-  @media (min-width: 1200px){
-    display: flex;
-    justify-content: space-between;
     padding: 25px 38px;
   }
-}
-.main-nav {
-  width: 100%;
-  padding-top: 10px;
-  display: flex;
-  justify-content: space-between;
-  @media (min-width: 768px) {
-    padding: 25px 0; 
-  }
   @media (min-width: 1200px) {
-    display: none;
+    max-width: 100%;
   }
 }
-.menu:hover {
+.header-nav__logo-img {
+  vertical-align: bottom;
+}
+.header-nav__menu-icon {
+  vertical-align: sub;
+}
+.header-nav__menu-icon:hover {
   cursor: pointer;
 }
-.header-section {
+.header-content {
+  min-width: 320px;
+  max-width: 878px;
+  margin: 0 auto;
   position: relative;
-  // max-width: 80%;
-  // margin: auto;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  padding: 25px;
+  padding: 45px;
   @media (min-width: 768px){
-    // max-width: 100%;
-    margin: 0;
-    flex-direction: row;
-    padding: 35px 0 100px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 35px 65px 100px 65px;
+  }
+  @media (min-width: 960px){
+    padding-left: 39px;
+    padding-right: 39px;
   }
   @media (min-width: 1200px){
-    padding: 40px 0 185px;
+    padding: 55px 0 166px;
   }
   @media (min-width: 1440px){
     padding: 40px 0 146px 0;
   }
 }
-.dew-bg {
-  display: none;
-  position: absolute;
-  bottom: -1px;
-  right: 0;
-  z-index: -1;
-  background: url(../img/dudes.png) no-repeat;
-  width: 623px;
-  height: 585px;
-  @media (min-width: 768px) {
-    display: block;
-    background-size: 78%;
-    background-position: 104% 99%;
-  }
-  @media (min-width: 960px) {
-    background-size: 89%;
-  }
-  @media (min-width: 1200px) {
-    background-size: 100%;
-    background-position: 100% 100%;
-  }
-}
-
-.header-left {
-  width: 81%;
+.header-content__left {
   margin: auto;
   @media (min-width: 768px) {
     width: 100%;
     margin: 0;
     flex-basis: 58%;
   }
-  // flex-basis: 58%;
 }
-.header-left__title {
+.header-content__left-title {
   text-transform: uppercase;
   text-align: center;
   margin-bottom: 25px;
@@ -166,24 +80,58 @@ body {
     margin-bottom: 40px;
   }
   @media (min-width: 960px){
-    font-size: toRem(50.08px);
+    font-size: toRem(58.08px);
   }
   @media (min-width: 1200px) {
     margin-bottom: 30px;
-    font-size: toRem(50px);
+    font-size: toRem(60px);
   }
   @media (min-width: 1440px) {
     margin-bottom: 40px;
     font-size: toRem(60px);
   }
 }
-.test {
+.header-content__left-subtitle {
+  position: relative;
+  text-transform: uppercase;
+  @include text ( toRem($base-size), 'Acrom-Bold');
+  @media (min-width: 480px){
+    font-size: toRem(13.05px);
+  }
   @media (min-width: 768px){
-    width: 50%;
-    margin-left: 50px;
+    font-size: toRem(7.85px);
+    width: 45%;
+    margin-left: 18%;
+  }
+  @media (min-width: 960px){
+    font-size: toRem(9.81px);
+  }
+  @media (min-width: 1200px){
+    font-size: toRem(8.75px);
+  }
+  @media (min-width: 1440px){
+    font-size: toRem(10.5px);
   }
 }
-.hidden-logo {
+.header-content__left-subtitle::before {
+  content: '<';
+  display: inline-block;
+  color: $blue-color;
+  font-size: toRem(12.5px);
+  position: absolute;
+  left: -20px;
+  top: -2px;
+}
+.header-content__left-subtitle::after {
+  content: '/>';
+  display: inline-block;
+  color: $blue-color;
+  font-size: toRem(12.5px);
+  position: absolute;
+  right: -20px;
+  bottom: -2px;
+}
+.main__logo {
   text-align: center;
   @include text (toRem(80px), 'Acrom-ExtraBold');
   color: rgba(0,0,0,0.2);
@@ -191,7 +139,21 @@ body {
     font-size: toRem(120px);
   }
   @media (min-width: 768px) {
-    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-60%);
+    z-index: -1;
+    font-size: toRem(235.53px);
+  }
+  @media (min-width: 960px){
+    font-size: toRem(290.42px);
+  }
+  @media (min-width: 1200px) {
+    font-size: toRem(315.52px);
+  }
+  @media (min-width: 1440px){
+    font-size: toRem(315px);
   }
 }
 @media (min-width: 768px){
@@ -217,55 +179,15 @@ body {
     vertical-align: middle;
   }
 }
-.header-left__subtitle {
-  position: relative;
-  text-transform: uppercase;
-  @include text ( toRem($base-size), 'Acrom-Bold');
-  @media (min-width: 480px){
-    font-size: toRem(13.05px);
-  }
-  @media (min-width: 768px){
-    font-size: toRem(7.85px);
-  }
-  @media (min-width: 960px){
-    font-size: toRem(9.81px);
-  }
-  @media (min-width: 1200px){
-    font-size: toRem(8.75px);
-  }
-  @media (min-width: 1440px){
-    font-size: toRem(10.5px);
-  }
-}
-.header-left__subtitle::before {
-  content: '<';
-  display: inline-block;
-  color: $blue-color;
-  font-size: toRem(12.5px);
-  position: absolute;
-  left: -20px;
-  top: -2px;
-}
-.header-left__subtitle::after {
-  content: '/>';
-  display: inline-block;
-  color: $blue-color;
-  font-size: toRem(12.5px);
-  position: absolute;
-  right: -20px;
-  bottom: -2px;
-}
-.header-right {
-  width: 79%;
+.header-content__right {
   margin: auto;
   @media (min-width: 768px) {
     width: 100%;
     margin: 0;
     flex-basis: 23%;
   }
- 
 }
-.header-right__subtitle {
+.header-content__right-subtitle {
   @include text(toRem($base-size), 'Acrom-ExtraBold');
   text-transform: uppercase;
   @media (min-width: 480px){
@@ -286,8 +208,7 @@ body {
     margin-bottom: 15px;
   }
 }
-
-.header-right__text {
+.header-content__right-text {
   @include text;
   margin-bottom: 20px;
   @media (min-width: 480px){
@@ -306,17 +227,97 @@ body {
     font-size: toRem(12px);
   }
 }
-.header-left__btn {
+.btn-wrap {
+  text-align: center;
+  @media (min-width: 768px) {
+    text-align: left;
+    margin-top: 25px;
+    margin-left: 10%; 
+    flex-grow: 1;
+  }
+}
+.header-content__btn {
+  display: inline-block;
+}
+.dew-bg {
+  display: none;
+  position: absolute;
+  bottom: -1px;
+  right: 0;
+  z-index: -1;
+  background: url(../img/dudes.png) no-repeat;
+  width: 623px;
+  height: 585px;
+  @media (min-width: 768px) {
+    display: block;
+    background-size: 78%;
+    background-position: 64% 99%;
+  }
+  @media (min-width: 960px) {
+    background-size: 89%;
+  }
+  @media (min-width: 1200px) {
+    background-size: 100%;
+    background-position: 100% 100%;
+  }
+}
+.header-social {
   display: none;
   @media (min-width: 768px) {
     display: block;
-    margin-top: 35px;
+    padding: 20px;
+    position: absolute;
+    right: 40px;
+    top: 316px;
+  }
+  @media (min-width: 960px) {
+    right: 17px;
+    top: 362px;
+  }
+  @media (min-width: 1200px) {
+    top: 782%;
+    right: 20px;
   }
 }
-.header-right__btn {
-  display: block;
-  margin: 0 auto;
-  @media (min-width: 768px) {
-    display: none;
+.social-icon {
+  width: 15px;
+  height: 15px;
+  display: inline-block;
+}
+.social-icon:hover {
+  opacity: 0.7;
+}
+.fb {
+  width: 8px;
+  margin-right: 25px;
+}
+.number {
+  display: none;
+  position: absolute;
+  bottom: 30px;
+  left: 30px;
+  @media (min-width: 1200px) {
+    display: block;
   }
+}
+.number::before {
+  content: '';
+  width: 20px;
+  height: 3px;
+  display: block;
+  background-color: #fff;
+  transform: rotate(-90deg);
+  margin: auto;
+  margin-bottom: 20px;
+  vertical-align: middle;
+}
+.big {
+  // writing-mode: tb-lr; /*не работает*/
+  display: inline-block;
+  transform: rotate(-90deg);
+  @include text (toRem(20px), 'Acrom-Bold');
+}
+.small {
+  vertical-align: super;
+  @include text (toRem(14px), 'Acrom-Regular');
 }
