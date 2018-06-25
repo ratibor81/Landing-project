@@ -1,16 +1,20 @@
 .notice__btn, .form__btn{
     background-color: $orange-color;
-    color: #fff;
+    color: $white-color;
     text-transform: uppercase;
-    padding: 5px 15px;
+    padding: 8px 15px;
     border: none;
     display: block;
-    margin: 30px auto 10px auto;
     box-shadow: 5px 7px 20px -7px rgba(255,107,8,1);
+    @media(min-width : 480px){
+        padding: 13px 20px;
+    }
 }
 .notice__btn{
+    margin: 20px auto 10px;
+    width: 100%;
     @include text(7px, 'Acrom-ExtraBold');
-    @media(min-width : 480px) and (max-width : 768px){
+    @media(min-width : 480px) and (max-width : 767px){
         font-size: 10px;
     }
     @media(min-width : 960px) and (max-width : 1200px){
@@ -20,13 +24,25 @@
         font-size: 9px;
     }
 }  
+.button-wrap{ 
+    @media(min-width : 768px){
+        margin: 20px 35px 0;
+        width: auto;
+        padding: 12px 35px;
+    }
+}
 .form__btn{
+    margin: 20px 0;
     @include text(5px, 'Acrom-ExtraBold');
     @media(min-width: 480px){
         font-size: 8px;
     }
+    @media (min-width : 768px){
+        margin-bottom: 0;    
+    }
     @media (min-width : 960px) and (max-width : 1200px){
         font-size: 9px;
+        margin-top: 30px;
     }
 } 
 .button--hover:hover{

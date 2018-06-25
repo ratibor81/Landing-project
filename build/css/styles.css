@@ -43,6 +43,7 @@
 .footer {
   margin: auto;
   background-color: #181c27;
+  line-height: 1.5;
 }
 
 .footer__wrap {
@@ -101,6 +102,7 @@
 
 .copyright-wrap {
   background-color: #202020;
+  border-top: 0.5px solid #4f4f51;
 }
 
 .footer__copyright {
@@ -134,13 +136,14 @@
 }
 
 .wrapper-block {
-  padding: 0 23px;
+  padding: 0 23px 30px;
   position: relative;
+  line-height: 1.5;
 }
 
 .bonus,
 .notice__block2 {
-  padding: 20px 37px;
+  padding: 0 30px;
 }
 
 .bonus__header,
@@ -150,8 +153,7 @@
   font-family: "Acrom-Bold";
   text-transform: uppercase;
   text-align: center;
-  padding-top: 30px;
-  padding-bottom: 10px;
+  padding-bottom: 15px;
 }
 
 .black-bg {
@@ -159,7 +161,7 @@
   color: #fff;
 }
 
-.bonus__list,
+.bonus-title,
 .notice__elem,
 .notice__price {
   font-size: 9px;
@@ -168,69 +170,72 @@
 
 .bonus__list {
   position: relative;
-  margin: 0 0 6px 32px;
-  padding: 4px;
   counter-reset: li;
   padding: 0;
   list-style: none;
 }
 
-.bonus__list::before {
+.bonus-title {
+  padding: 0 0 20px 45px;
+}
+
+.bonus-title:before {
   content: "\2501";
-  position: relative;
-  left: -15px;
+  position: absolute;
+  left: 17px;
+  font-size: 17px;
+  top: -9px;
 }
 
 .bonus__item {
+  text-transform: uppercase;
   position: relative;
   margin: 0 0 6px 32px;
-  padding: 4px;
+  padding-top: 3px;
   font-size: 9px;
   font-family: "Acrom-ExtraBold";
 }
 
 .bonus__item::before {
-  content: counter(li, decimal-leading-zero);
+  content: counter(li, decimal-leading-zero) ".";
   counter-increment: li;
   position: absolute;
-  top: -2px;
   left: -32px;
-  width: 32px;
-  padding: 4px 0;
   font-size: 17px;
   font-family: "Acrom-ExtraBold";
+  text-indent: -5px;
+  overflow: hidden;
+}
+
+.bonus__item::after {
+  content: "\220E";
+  color: #16ebfe;
+  position: absolute;
+  left: -20px;
+  top: 19px;
+  font-size: 12px;
+}
+
+.notice__text,
+.notice__end {
+  font-size: 9px;
+  font-family: "Acrom-Regular";
+  padding: 5px 0;
 }
 
 .bonus__discr {
-  padding-left: 36px;
-  text-indent: -7px;
-}
-
-.bonus__discr::before {
-  content: "\220E";
-  color: #16ebfe;
-  position: relative;
-  left: -12px;
-}
-
-.bonus__discr,
-.notice__text,
-.notice__end {
   font-size: 8px;
   font-family: "Acrom-Regular";
-  padding-bottom: 10px;
+  padding-bottom: 9px;
+  padding-left: 32px;
 }
 
-.notice__text-before {
-  text-indent: -9px;
-}
-
-.notice__text-before::before {
+.notice__text-line::before {
   content: "\2571";
   color: #000;
-  position: relative;
-  left: -15px;
-  top: 4px;
+  position: absolute;
+  left: 30px;
+  font-size: 12px;
 }
 
 .notice__block {
@@ -241,6 +246,8 @@
   flex-wrap: wrap;
   align-items: center;
   padding: 50px;
+  box-shadow: 0px 7px 18px 3px #e0e0e0;
+  margin-bottom: 20px;
 }
 
 .notice__elem {
@@ -251,7 +258,22 @@
 }
 
 .notice__price {
-  flex-basis: 40%;
+  flex-basis: 50%;
+  text-transform: uppercase;
+  position: relative;
+}
+
+.notice__price-line {
+  padding-left: 30px;
+}
+
+.notice__price-line::before {
+  content: "\2501";
+  color: #9ba6b0;
+  position: absolute;
+  left: 3px;
+  top: -10px;
+  font-size: 21px;
 }
 
 .blue-bg {
@@ -260,12 +282,12 @@
 }
 
 .big-char {
-  font-size: 16px;
+  font-size: 25px;
   font-family: "Acrom-ExtraBold";
 }
 
 .notice__bold-text {
-  font-size: 9px;
+  font-size: 9.5px;
   font-family: "Acrom-Bold";
 }
 
@@ -276,13 +298,12 @@
 .ps__header {
   font-size: 12px;
   font-family: "Acrom-ExtraBold";
-  padding: 0 37px;
+  padding: 12px 30px 0;
 }
 
 .registrate {
   position: relative;
-  width: 140px;
-  margin: auto;
+  padding: 0 56px;
 }
 
 .registrate::before {
@@ -294,16 +315,25 @@
   writing-mode: vertical-rl;
   color: #f7f7f7;
   position: absolute;
-  left: -80px;
-  top: 20px;
+  left: -30px;
+  top: 0;
 }
 
 .registrate h2 {
   text-align: left;
+  position: relative;
 }
 
-.registrate span {
+.registrate-line {
+  padding-left: 10px;
   position: relative;
+}
+
+.registrate-line::before {
+  content: "\2501";
+  position: absolute;
+  left: -4px;
+  font-size: 8px;
 }
 
 .notice__end,
@@ -316,19 +346,21 @@
   background-color: #ff6b08;
   color: #fff;
   text-transform: uppercase;
-  padding: 5px 15px;
+  padding: 8px 15px;
   border: none;
   display: block;
-  margin: 30px auto 10px auto;
   box-shadow: 5px 7px 20px -7px #ff6b08;
 }
 
 .notice__btn {
+  margin: 20px auto 10px;
+  width: 100%;
   font-size: 7px;
   font-family: "Acrom-ExtraBold";
 }
 
 .form__btn {
+  margin: 20px 0;
   font-size: 5px;
   font-family: "Acrom-ExtraBold";
 }
@@ -423,7 +455,12 @@ input:focus {
   }
 
   .wrapper-block {
-    padding: 0 43px;
+    padding: 0 43px 70px;
+  }
+
+  .bonus,
+  .notice__block2 {
+    padding: 0 42px;
   }
 
   .bonus__header,
@@ -432,29 +469,57 @@ input:focus {
     font-size: 18px;
   }
 
-  .bonus__item::before {
-    font-size: 25px;
+  .bonus-title,
+  .notice__elem,
+  .notice__price {
+    font-size: 13.5px;
   }
 
-  .bonus__discr {
-    padding-left: 47px;
+  .bonus-title:before {
+    left: 30px;
+    top: 0;
+  }
+
+  .bonus-title {
+    padding: 0px 0 30px 68px;
   }
 
   .notice__block {
-    flex-basis: 45%;
+    flex-basis: 42%;
+  }
+
+  .notice__price-line::before {
+    left: 3px;
+    top: -6px;
+    font-size: 20px;
   }
 
   .big-char {
-    font-size: 25px;
+    font-size: 40px;
   }
 
   .ps__header {
     font-size: 20px;
+    padding: 12px 40px 0;
   }
 
   .registrate::before {
     font-size: 102px;
-    left: -115px;
+    left: -55px;
+  }
+
+  .registrate {
+    padding: 0 80px;
+  }
+
+  .registrate-line::before {
+    left: -10px;
+    font-size: 13px;
+  }
+
+  .notice__btn,
+  .form__btn {
+    padding: 13px 20px;
   }
 
   .form__btn {
@@ -529,67 +594,120 @@ input:focus {
   .wrapper-block {
     display: flex;
     flex-wrap: wrap;
-    padding: 45px 0;
+    padding: 0 0 100px;
     justify-content: space-between;
-    align-items: top;
   }
 
   .bonus,
   .notice__block2 {
-    flex-basis: 45%;
+    flex-basis: 40%;
+    padding: 0 35px;
   }
 
   .bonus {
-    padding: 20px 0px;
+    padding: 0;
   }
 
   .bonus__header,
   .notice__header,
   .notice__header2 {
-    font-size: 26px;
+    padding-top: 0;
+    font-size: 27px;
     text-align: left;
   }
 
-  .bonus__item {
-    padding: 4px 20px;
+  .bonus-title,
+  .notice__elem,
+  .notice__price {
+    font-size: 10px;
   }
 
-  .bonus__discr {
-    padding-left: 50px;
+  .bonus__list {
+    padding-right: 60px;
+  }
+
+  .bonus-title:before {
+    left: 0;
+    font-size: 25px;
+    top: -13px;
+  }
+
+  .bonus-title {
+    padding-left: 53px;
+  }
+
+  .notice__text-line::before {
+    left: 15px;
+    font-size: 17px;
+  }
+
+  .notice__price-line::before {
+    left: 0px;
+    top: -13px;
+    font-size: 25px;
+  }
+
+  .big-char {
+    font-size: 32px;
   }
 
   .notice__header {
     position: absolute;
-    right: 119px;
-    top: -10px;
+    right: 90px;
+    top: -25px;
+  }
+
+  .notice__block2 {
+    position: relative;
+    padding: 0 16px;
+  }
+
+  .notice__text-wrap {
+    padding: 30px 0 20px 25px;
   }
 
   .ps__header {
-    padding: 0;
+    padding: 5px 0;
     font-size: 16px;
     flex-basis: 10%;
-    padding-top: 20px;
     text-align: end;
     position: relative;
     left: 25px;
   }
 
-  .notice__header2 {
-    position: relative;
-  }
-
   .registrate::before {
     font-size: 146px;
-    left: 170px;
+    left: 135px;
   }
 
   .registrate {
-    flex-basis: 43%;
-    margin: 0;
+    flex-basis: 44%;
+    padding: 0;
+  }
+
+  .registrate-line::before {
+    left: 0;
+    font-size: 20px;
+    top: -10px;
+  }
+
+  .registrate-line {
+    padding-left: 35px;
+    padding-right: 60px;
+  }
+
+  .button-wrap {
+    margin: 20px 35px 0;
+    width: auto;
+    padding: 12px 35px;
+  }
+
+  .form__btn {
+    margin-bottom: 0;
   }
 
   .form {
-    flex-basis: 45%;
+    flex-basis: 50%;
   }
 
   .wrapper {
@@ -631,40 +749,63 @@ input:focus {
     font-size: 33px;
   }
 
-  .bonus__list,
+  .bonus-title,
   .notice__elem,
   .notice__price {
-    font-size: 11px;
+    font-size: 12px;
+  }
+
+  .bonus-title:before {
+    font-size: 33px;
+  }
+
+  .bonus-title {
+    padding-left: 60px;
   }
 
   .bonus__item::before {
     font-size: 21px;
+    text-indent: -7px;
+    left: -45px;
+  }
+
+  .bonus__item::after {
+    left: -24px;
+    top: 25px;
+    font-size: 15px;
   }
 
   .bonus__item {
     font-size: 11px;
+    margin-left: 45px;
   }
 
-  .bonus__discr::before {
-    left: -23px;
-  }
-
-  .bonus__discr,
   .notice__text,
   .notice__end {
     font-size: 10px;
+  }
+
+  .bonus__discr {
+    font-size: 10px;
+    padding-left: 45px;
   }
 
   .notice__block {
     padding: 70px;
   }
 
-  .big-char {
-    font-size: 32px;
+  .notice__price-line::before {
+    top: -10px;
+    font-size: 22px;
+    color: #fff;
   }
 
   .notice__bold-text {
     font-size: 11px;
+  }
+
+  .notice__text-wrap {
+    padding-right: 5px;
   }
 
   .ps__header {
@@ -673,12 +814,8 @@ input:focus {
 
   .registrate::before {
     font-size: 182px;
-    left: 225px;
-  }
-
-  .registrate span {
-    width: 200px;
-    display: inline-flex;
+    left: 162px;
+    top: -15px;
   }
 
   .form {
@@ -695,14 +832,6 @@ input:focus {
 }
 
 @media (min-width: 1200px) {
-  .footer__wrap {
-    padding: 30px 12px;
-  }
-
-  .footer__copyright {
-    padding: 5px 12px;
-  }
-
   .footer__list-link {
     font-size: 7px;
   }
@@ -713,7 +842,7 @@ input:focus {
     font-size: 30px;
   }
 
-  .bonus__list,
+  .bonus-title,
   .notice__elem,
   .notice__price {
     font-size: 10px;
@@ -731,22 +860,29 @@ input:focus {
     font-size: 10px;
   }
 
-  .bonus__discr,
   .notice__text,
   .notice__end {
+    font-size: 10px;
+  }
+
+  .bonus__discr {
     font-size: 9px;
   }
 
-  .big-char {
-    font-size: 35px;
+  .notice__block {
+    padding: 60px;
   }
 
   .notice__header {
-    right: 80px;
+    right: 170px;
   }
 
   .notice__bold-text {
     font-size: 10px;
+  }
+
+  .notice__text-wrap {
+    padding: 50px 9px 20px 35px;
   }
 
   .ps__header {
@@ -755,8 +891,8 @@ input:focus {
 
   .registrate::before {
     font-size: 162px;
-    left: 220px;
-    top: 25px;
+    left: 150px;
+    top: -7px;
   }
 
   .wrapper {
@@ -781,19 +917,27 @@ input:focus {
     font-size: 36px;
   }
 
-  .bonus__list,
+  .bonus-title,
   .notice__elem,
   .notice__price {
     font-size: 12px;
+  }
+
+  .bonus__item::after {
+    left: -30px;
+    font-size: 17px;
   }
 
   .bonus__item {
     font-size: 12px;
   }
 
-  .bonus__discr,
   .notice__text,
   .notice__end {
+    font-size: 11px;
+  }
+
+  .bonus__discr {
     font-size: 11px;
   }
 
@@ -805,7 +949,23 @@ input:focus {
     font-size: 12px;
   }
 
+  .big-char {
+    font-size: 37px;
+  }
+
+  .notice__header {
+    right: 100px;
+  }
+
   .notice__bold-text {
+    font-size: 12px;
+  }
+
+  .notice__block2 {
+    flex-basis: 37%;
+  }
+
+  .orange-text {
     font-size: 12px;
   }
 
@@ -815,8 +975,7 @@ input:focus {
 
   .registrate::before {
     font-size: 195px;
-    left: 208px;
-    top: 6px;
+    left: 180px;
   }
 
   .form {
@@ -825,6 +984,10 @@ input:focus {
 }
 
 @media (min-width: 1200px) and (max-width: 1440px) {
+  .footer__wrap {
+    padding: 30px 89px;
+  }
+
   .footer__title,
   .footer__link,
   .footer__button {
@@ -835,28 +998,61 @@ input:focus {
   .footer__contact {
     font-size: 9px;
   }
+
+  .footer__copyright {
+    padding: 5px 89px;
+  }
+
+  .wrapper-block {
+    padding: 0 77px 100px;
+  }
 }
 
-@media (min-width: 480px) and (max-width: 768px) {
-  .bonus__list,
-  .notice__elem,
-  .notice__price {
-    font-size: 13.5px;
+@media (min-width: 960px) and (max-width: 1199px) {
+  .bonus__list {
+    padding-right: 80px;
+  }
+
+  .notice__block2 {
+    flex-basis: 35%;
+  }
+
+  .registrate-line {
+    padding-right: 100px;
+  }
+}
+
+@media (min-width: 480px) and (max-width: 767px) {
+  .bonus__item::before {
+    font-size: 25px;
+    text-indent: -7px;
+  }
+
+  .bonus__item::after {
+    left: -13px;
+    top: 28px;
+    font-size: 17px;
   }
 
   .bonus__item {
     font-size: 14px;
-    padding: 4px 20px;
+    padding-left: 18px;
   }
 
-  .bonus__discr,
   .notice__text,
   .notice__end {
     font-size: 13px;
   }
 
-  .notice__text-before {
-    text-indent: -14px;
+  .bonus__discr {
+    font-size: 12px;
+    padding-left: 50px;
+    padding-bottom: 20px;
+  }
+
+  .notice__text-line::before {
+    left: 50px;
+    font-size: 18px;
   }
 
   .notice__block {
@@ -887,6 +1083,7 @@ input:focus {
 
   .form__btn {
     font-size: 9px;
+    margin-top: 30px;
   }
 
   input::-webkit-input-placeholder {
@@ -903,12 +1100,6 @@ input:focus {
 
   input::placeholder {
     font-size: 10px;
-  }
-}
-
-@media (min-width: 768px) and (max-width: 960px) {
-  .registrate span {
-    display: none;
   }
 }
 

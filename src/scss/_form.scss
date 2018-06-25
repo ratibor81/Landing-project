@@ -5,7 +5,7 @@
         padding: 65px;
     }
     @media(min-width: 768px){
-        flex-basis: 45%;
+        flex-basis: 50%;
     }
     @media(min-width: 960px){
         padding: 60px;
@@ -21,7 +21,7 @@ input{
     width: 100%;
     &::placeholder {
         @include text(7px, 'Acrom-Regular');  
-        color: #000;
+        color: $black-color;
         @media(min-width: 480px){
             font-size: 9px;
         }
