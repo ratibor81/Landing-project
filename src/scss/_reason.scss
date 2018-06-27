@@ -8,6 +8,10 @@
   @media (min-width: 768px) {
     padding-top: 150px;
   }
+  @media (min-width: 1200px) {
+    padding-bottom: 55px;
+  }
+
 }
 .reason__top-part {
   margin-bottom: 30px;
@@ -223,6 +227,7 @@
   }
   .reason__list-item:nth-child(4){
     order: -6;
+    margin-right: 0;
   }
   .reason__list-item:nth-child(5){
     order: -5;
@@ -232,6 +237,7 @@
   }
   .reason__list-item:nth-child(8){
     order: -3;
+    margin-right: 0;
   }
   .reason__list-item:nth-child(2){
     order: -2;
@@ -239,6 +245,7 @@
   }
   .reason__list-item:nth-child(){
     order: -1;
+    margin-right: 0;
   }
 }
 
