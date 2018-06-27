@@ -156,27 +156,12 @@ body {
     font-size: toRem(315px);
   }
 }
-@media (min-width: 768px){
-  .dash_after::after {
-    content: "";
-    display: inline-block;
-    background-color: #fff;
-    height: 6px;
-    width: 60px;
-    margin-left: 20px;
-    vertical-align: middle;
-  }
-  .dash_before {
-    display: block;
-  }
-  .dash_before::before {
-    content: '';
-    display: inline-block;
-    background-color: #fff;
-    height: 6px;
-    width: 60px;
-    margin-right: 20px;
-    vertical-align: middle;
+.dash {
+  font-size: toRem(70px);
+  display: none;
+  @media (min-width: 768px) {
+    display: inline;
+    line-height: 0;
   }
 }
 .header-content__right {
@@ -216,6 +201,8 @@ body {
   }
   @media (min-width: 768px){
     font-size: toRem(8.97px);
+    margin-bottom: 0;
+
   }
   @media (min-width: 960px){
     font-size: toRem(11.22px);
@@ -278,6 +265,9 @@ body {
     top: 782%;
     right: 20px;
   }
+  @media (min-width: 1440px) {
+    top: 770%;
+  }
 }
 .social-icon {
   width: 15px;
@@ -301,15 +291,10 @@ body {
   }
 }
 .number::before {
-  content: '';
-  width: 20px;
-  height: 3px;
+  content: "\2013";
   display: block;
-  background-color: #fff;
+  font-size: 38px;
   transform: rotate(-90deg);
-  margin: auto;
-  margin-bottom: 20px;
-  vertical-align: middle;
 }
 .big {
   // writing-mode: tb-lr; /*не работает*/
