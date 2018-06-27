@@ -14,8 +14,12 @@
     margin: 20px auto 10px;
     width: 100%;
     @include text(7px, 'Acrom-ExtraBold');
-    @media(min-width : 480px) and (max-width : 767px){
+    @media(min-width : 480px){
         font-size: 10px;
+    }
+    @media(min-width : 768px){
+        font-size: 7px;
+        margin-bottom: 0;
     }
     @media(min-width : 960px) and (max-width : 1200px){
         font-size: 9px;

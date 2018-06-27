@@ -1,20 +1,25 @@
-.wrapper-block{
+.bonus-block, .price-block, .ps-block{
     padding: 0 23px 30px;
-    position: relative;
     line-height: 1.5;
     @media(min-width: 480px){
         padding: 0 43px 70px;
     }
     @media(min-width: 768px){
         display: flex;
-        flex-wrap: wrap;
         padding: 0 0 100px;
         justify-content: space-between;
     } 
     @media(min-width: 1200px) and (max-width: 1440px){
         padding: 0 77px 100px;
     }
-
+}
+.price-block{
+    position: relative; 
+}
+.ps-block{
+    @media(min-width: 768px){
+        flex-wrap: wrap;
+    }
 }
 .bonus, .notice__block2{
     padding: 0 30px;
@@ -35,12 +40,11 @@
     @include text(12px, 'Acrom-Bold');
     text-transform: uppercase;
     text-align: center;
-    padding-bottom: 15px;
+    margin-bottom: 15px;
     @media(min-width: 480px){
         font-size: 18px;
         }
     @media(min-width: 768px){
-        padding-top: 0;
         font-size: 27px;
         text-align: left;
     }
@@ -81,7 +85,6 @@
     counter-reset: li;
     padding: 0;
     list-style: none; 
-
     @media(min-width: 768px){
         padding-right: 60px;
     }
@@ -90,7 +93,8 @@
     }
 }
 .bonus-title{
-    padding: 0 0 20px 45px;
+    padding-left: 45px;
+    margin-bottom: 20px;
     &:before {
         content: "\2501";
         position: absolute;
@@ -111,7 +115,8 @@
         }
     }
     @media(min-width: 480px){
-        padding: 0px 0 30px 68px;
+        padding-left: 68px;
+        margin-bottom: 30px;
     }
     @media(min-width: 768px){
         padding-left: 53px;
@@ -123,21 +128,20 @@
 .bonus__item{
     text-transform: uppercase;
     position:relative;
-    margin:0 0 6px 32px;
-    padding-top: 3px;
+    margin: 0 0 15px 32px;
     @include text(9px, 'Acrom-ExtraBold');
     &::before {
         content: counter(li, decimal-leading-zero) ".";
         counter-increment: li; 
         position: absolute;
         left: -32px;
-        // width:32px;
         @include text(17px, 'Acrom-ExtraBold');
         text-indent: -5px;
         overflow: hidden;
         @media(min-width: 480px) and (max-width: 767px){
             font-size: 25px;
             text-indent: -7px;
+
         }
         @media(min-width: 960px){
             font-size: 21px;
@@ -179,7 +183,6 @@
     }
     @media(min-width: 960px){
         font-size: 11px;
-        margin-left: 45px;
     }
     @media(min-width: 1200px){
         font-size: 10px;
@@ -191,7 +194,7 @@
 
 .notice__text, .notice__end{
     @include text(9px, 'Acrom-Regular');
-    padding: 5px 0;
+    margin-top: 5px;
     @media (min-width : 480px) and (max-width : 767px){
         font-size: 13px;
     }
@@ -207,16 +210,12 @@
 }
 .bonus__discr{
     @include text(8px, 'Acrom-Regular');
-    padding-bottom: 9px;
-    padding-left: 32px;
+    text-transform: none;
     @media (min-width : 480px) and (max-width : 767px){
         font-size: 12px;
-        padding-left: 50px;
-        padding-bottom: 20px;
     }
     @media(min-width: 960px){
         font-size: 10px;
-        padding-left: 45px;
     }
     @media(min-width: 1200px){
         font-size: 9px;
@@ -250,11 +249,13 @@
     padding: 50px;
     box-shadow: 0px 7px 18px 3px rgba(224,224,224,1);
     margin-bottom: 20px;
-    @media (min-width : 480px) and (max-width : 767px){
-        padding: 75px;
-    }
-    @media(min-width: 480px){
+    @media (min-width : 480px){
+        padding: 75px; 
         flex-basis: 42%;
+    }
+    @media(min-width: 768px){
+        padding: 50px;
+        margin-bottom: 0;
     }
     @media(min-width: 960px){
         padding: 70px;
@@ -321,7 +322,7 @@
         font-size: 40px;
     }
     @media(min-width: 768px){
-        font-size: 32px;
+        font-size: 30px;
     }
     @media(min-width: 1440px){
     font-size: 37px;
@@ -331,7 +332,7 @@
     @media(min-width: 768px){
         position: absolute;
         right: 90px;
-        top: -25px;
+        top: -10px;
     }
     @media(min-width: 1200px){
        right: 170px;
@@ -369,7 +370,7 @@
 }
 .notice__text-wrap{
     @media(min-width: 768px){
-        padding: 30px 0 20px 25px;
+        padding: 50px 0 20px 25px;
     }
     @media(min-width: 960px){
         padding-right: 5px;
@@ -377,7 +378,6 @@
     @media(min-width: 1200px){
         padding: 50px 9px 20px 35px;
     }
-
 }
 .orange-text{
     color: $orange-color;
