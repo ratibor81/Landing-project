@@ -32,3 +32,14 @@ var goToReview = function goToReview(n) {
 
 btn_prev.addEventListener('click', prevClickHandler);
 btn_next.addEventListener('click', nextClickHandler);
+
+// jQuery Burger-menu
+
+(function ($) {
+	$(function () {
+		$('.icon').on('click', function () {
+			$('.menu').toggleClass('menu-open');
+			$('.menu-top').closest('.icon').toggleClass('menu-open');
+		});
+	});
+})($);
