@@ -36,8 +36,7 @@ btn_next.addEventListener('click', nextClickHandler);
 (function($) {
 	$(function() {
 			$('.icon').on('click', function() {
-				$('.menu').toggleClass('menu-open');
-					$('.menu-top').closest('.icon').toggleClass('menu-open');
+					$(this).closest('.menu').toggleClass('menu-open');
 			});
-		});
+	});
 })($);

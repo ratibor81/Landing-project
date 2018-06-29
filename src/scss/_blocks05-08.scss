@@ -297,7 +297,7 @@
       width: 50%;
     }
     @media screen and (min-width: 960px) {
-      width: 52%;
+      width: 48%;
     }
   }
 
@@ -327,7 +327,7 @@
       }
       @media screen and (min-width: 768px) {
         font-size: rem(8.97);
-        width: 80%;
+        width: 90%;
         margin-bottom: 15px;
         padding-left: 14px;
       }
@@ -337,10 +337,11 @@
       @media screen and (min-width: 1200px) {
         font-size: rem(10);
         margin-bottom: 20px;
+        width: 90%;
       }
       @media screen and (min-width: 1440px){
         font-size: rem(12);
-        width: 70%;
+        //width: 70%;
       }
 
       &:last-child {
@@ -402,6 +403,7 @@
     @media screen and (min-width: 768px) {
       display: flex;
       flex-flow: column wrap;
+      align-content: space-between;
       height: 270px;
     }
     @media screen and (min-width: 960px) {
@@ -478,7 +480,7 @@
     background: url('../img/man4.jpg') center no-repeat;
     background-size: cover;
     @media screen and (min-width: 768px) {
-      width: 50%;
+      width: 48%;
       margin-bottom: 0;
       order: 4;
     }
@@ -553,11 +555,11 @@
   }
   @media screen and (min-width: 768px) {
     order: 2;
-    width: 50%;
+    width: 48%;
     flex-direction: unset;
     justify-content: space-between;
     margin: 0;
-    padding-left: 15px;
+    padding-left: 0;
     margin-bottom: 30px;
     // height: 40%;
   }

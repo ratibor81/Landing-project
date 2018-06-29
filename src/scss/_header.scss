@@ -6,7 +6,6 @@ body {
   position: relative;
   background: radial-gradient(at  center 40%, #193049, #181c27);
   color: #fff;
-  z-index: 100;
 }
 .header-nav {
   display: none;
@@ -40,6 +39,7 @@ body {
   margin: 0 auto;
   position: relative;
   padding: 45px;
+  z-index: 100;
   @media (min-width: 768px){
     display: flex;
     justify-content: space-between;
@@ -248,7 +248,7 @@ body {
     background-position: 100% 100%;
   }
 }
-.header-social {
+.header-networks {
   display: none;
   @media (min-width: 768px) {
     display: block;
@@ -269,17 +269,22 @@ body {
     top: 770%;
   }
 }
-.social-icon {
+.header-networks a:nth-child(1) {
+  margin-right: 18px;
+}
+.header-networks a {
+  display: inline-block;
+}
+.soc-icon {
   width: 15px;
   height: 15px;
   display: inline-block;
+  transition: .3s linear;
 }
-.social-icon:hover {
+.soc-icon:hover {
   opacity: 0.7;
-}
-.fb {
-  width: 8px;
-  margin-right: 25px;
+  transform: scale(1.5);
+  transition: .3s linear;
 }
 .number {
   display: none;
