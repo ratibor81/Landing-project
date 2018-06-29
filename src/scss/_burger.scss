@@ -1,7 +1,7 @@
 .menu {
     text-align: right;
     display: block;
-    position: relative;
+    position: static;
 }
 .menu-item {
     color: #fff;
@@ -24,8 +24,6 @@
     transition: .5s linear;
     width: 22px;
     height: 17px;
-    // left: 65%;
-    // top: 25px;
     cursor: pointer;
     display: inline-block;
     transform: scaleX(-1);
@@ -71,18 +69,18 @@
         right: 0;
         left: 0;
         margin-top: 22px;
-        background-color: rgba(0, 0, 0, 0.8);
+        background-color: rgba(0, 0, 0, 0.9);
         overflow: hidden;
         opacity: 0;
         transition: 1s;
-        z-index: -1;
+        z-index: -2;
 }
 .menu-item {
         display: block;
         padding: 10px 0;
         text-align: center;
         color: #fff;
-        z-index: -1;
+        z-index: -2;
 }
 
 .menu.menu-open .icon span:nth-child(1) {
