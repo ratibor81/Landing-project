@@ -3,7 +3,7 @@
 	@media (min-width: 768px){
 		display: flex;
 		justify-content: space-between;
-		padding-top: 100px;
+		padding-top: 90px;
   }
 }
 .future-section__top {
@@ -151,10 +151,13 @@
   }
 }
 .future-bott__subtitle {
-	width: 50%;
+	width: 44%;
     margin: auto;
 	margin-bottom: 25px;
-	@include text;
+	font-weight: bold;
+	font-family: 'Acrom-Medium';
+	font-size: toRem(8.97px);
+	//@include text ('Acrom-Medium');
 	position: relative;
 	@media(min-width: 480px){
 	font-size: toRem(13.5px);
@@ -164,6 +167,7 @@
 	margin-bottom: 25px;
 	}
 	@media(min-width: 768px){
+		width: 70%;
 		font-size: toRem(8.97px);
 	}
 	@media (min-width: 960px){
@@ -183,8 +187,11 @@
 	height: 2px;
 	background-color: #000;
 	position: absolute;
-	left: 10px;
+	left: -27px;
 	top: 8px;
+	@media(min-width: 768px){
+		left: 10px;
+	}
 }
 .future-bott__list {
 	padding: 0 30px;
