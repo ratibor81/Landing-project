@@ -264,7 +264,7 @@
 }
 
 .warning-block {
-  padding: 20px 45px;
+  padding: 20px 30px 20px 45px;
 
   .header_block {
     width: 100%;
@@ -305,7 +305,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-left: 14px;
+    padding-left: 17px;
     @media screen and (min-width: 768px) {
       width: 92%;
       height: auto;
@@ -317,18 +317,51 @@
 
     li {
       list-style: square;
+      margin-bottom: 7px;
+      @media (min-width: 768px){
+        margin-bottom: 15px;
+      }
+      
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+
+    p {
+      font-family: 'Acrom-Regular';
+      color: #3f4144;
+      text-transform: none;
+      width: 207px;
+      font-size: rem(8.7);
+      @media screen and (min-width: 768px) {
+        width: 90%;
+        padding-left: 14px;
+      }
+      @media screen and (min-width: 960px) {
+        font-size: rem(9.81);
+      }
+      @media screen and (min-width: 1200px) {
+        font-size: rem(8.75);
+        width: 70%;
+      }
+      @media (min-width: 1440px){
+        font-size: rem(10.5);
+        width: 90%;
+      }
+    }
+
+    h3 {
       font-family: 'Acrom-ExtraBold';
       font-size: rem(8.7);
       text-transform: uppercase;
       width: 100%;
-      margin-bottom: 10px;
+      margin-bottom: 7px;
       @media screen and (min-width: 480px) {
         font-size: rem(13.05);
       }
       @media screen and (min-width: 768px) {
         font-size: rem(8.97);
         width: 90%;
-        margin-bottom: 15px;
         padding-left: 14px;
       }
       @media screen and (min-width: 960px) {
@@ -336,35 +369,11 @@
       }
       @media screen and (min-width: 1200px) {
         font-size: rem(10);
-        margin-bottom: 20px;
-        width: 90%;
+        width: 70%;
       }
       @media screen and (min-width: 1440px){
         font-size: rem(12);
-        //width: 70%;
-      }
-
-      &:last-child {
-        margin-bottom: 0;
-      }
-
-      p {
-        font-family: 'Acrom-Regular';
-        color: #3f4144;
-        text-transform: none;
-        width: 207px;
-        @media screen and (min-width: 768px) {
-          width: 100%;
-        }
-        @media screen and (min-width: 960px) {
-          font-size: rem(9.81);
-        }
-        @media screen and (min-width: 1200px) {
-          font-size: rem(8.75);
-        }
-        @media (min-width: 1440px){
-          font-size: rem(10.5);
-        }
+        width: 90%;
       }
 
       h4 {
@@ -379,12 +388,15 @@
   display: none;
   @media screen and (min-width: 768px) {
     display: block;
-    width: 39%;
+    width: 45%;
 
     img {
       width: 100%;
       height: 100%;
     }
+  }
+  @media screen and (min-width: 768px) {
+    width: 40%;
   }
 }
 
@@ -395,7 +407,7 @@
     @media screen and (min-width: 768px) {
       display: flex;
       justify-content: space-between;
-      margin-bottom: 25px;
+      margin-bottom: 40px;
     }
   }
 
@@ -411,7 +423,7 @@
     }
   }
   @media screen and (min-width: 768px) {
-    padding-bottom: 80px;
+    padding-bottom: 60px;
 
     .header_block {
       width: 45%;
@@ -531,13 +543,10 @@
     @media screen and (min-width: 768px) {
       width: 36%;
     }
-    @media screen and (min-width: 960px) {
-      width: 37%;
-    }
     @media screen and (min-width: 1200px) {
       width: 30%;
     }
-    @media screen and (min-width: 1200px) {
+    @media screen and (min-width: 1440px) {
       width: 35%;
     }
   }
@@ -561,7 +570,6 @@
     margin: 0;
     padding-left: 0;
     margin-bottom: 30px;
-    // height: 40%;
   }
   
   &:last-child {
@@ -633,11 +641,14 @@
   @media screen and (min-width: 960px) {
     height: 450px;
   }
+  @media (min-width: 1440px) {
+    height: 490px;
+  }
 
   .header_block {
     width: 90%;
     margin-bottom: 15px;
-    padding-left: 60px;
+    padding-left: 50px;
     @media screen and (min-width: 768px) {
       order: 3;
       width: 45%;
@@ -668,7 +679,7 @@
   &__img {
     width: 80%;
     margin-bottom: 10px;
-    padding-left: 60px;
+    padding-left: 50px;
     @media screen and (min-width: 768px) {
       margin-bottom: 0;
       width: 45%;
@@ -693,7 +704,7 @@
     padding: 0;
   }
 
-  h4 {
+  h3 {
     font-family: 'Acrom-ExtraBold';
     font-size: rem(8.7);
     text-transform: uppercase;
@@ -747,6 +758,7 @@
     width: 207px;
     margin-left: -12px;
     width: 100%;
+    padding-left: 0;
     @media screen and (min-width: 480px) {
       margin-left: -16px;
     }

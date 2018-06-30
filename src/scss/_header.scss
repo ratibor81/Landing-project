@@ -7,6 +7,14 @@ body {
   background: radial-gradient(at  center 40%, #193049, #181c27);
   color: #fff;
 }
+.logo {
+  transition: .5s ease-in-out;
+  &:hover {
+    transform: scale(1.2);
+    opacity: 0.7;
+    transition: .5s ease-in-out;
+  }
+}
 .header-nav {
   display: none;
   position: relative;
@@ -225,6 +233,9 @@ body {
 }
 .header-content__btn {
   display: inline-block;
+  &:hover {
+    transform: scale(1.1);
+  }
 }
 .dew-bg {
   display: none;
