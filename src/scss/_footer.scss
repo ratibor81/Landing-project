@@ -21,9 +21,9 @@
     @media(min-width: 960px){
         padding: 30px 39px;
     }
-    @media (min-width: 1200px) and (max-width: 1440px){
-        padding: 30px 89px;
-    }
+    // @media (min-width: 1200px) and (max-width: 1440px){
+    //     padding: 30px 89px;
+    // }
 }
 .footer__title, .footer__link, .footer__button{
     @include text(3.5px, 'Acrom-ExtraBold');
@@ -114,9 +114,9 @@
     @media(min-width: 960px){
         padding: 5px 39px;
     }
-    @media (min-width: 1200px) and (max-width: 1440px){
-        padding: 5px 89px;
-    }
+    // @media (min-width: 1200px) and (max-width: 1440px){
+    //     padding: 5px 89px;
+    // }
 }
 .footer__list-link{
     color: #4c4c4f;

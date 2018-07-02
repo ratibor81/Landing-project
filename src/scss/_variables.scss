@@ -15,3 +15,7 @@ $base-size: 9px;
   background-repeat: no-repeat;
   background-size: cover;
 }
+@function toRem($size-px){
+  $size-rem: $size-px / 16px;
+  @return #{$size-rem}rem;
+}
