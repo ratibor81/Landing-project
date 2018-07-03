@@ -46,9 +46,9 @@ btn_next.addEventListener('click', nextClickHandler);
 // Скрипт плавной прокрутки страницы и скрытия кнопки to-top-button
 
 $(document).ready(function () {
-	// появление/затухание кнопки #back-top
+	// появление/затухание кнопки .to-top-button
 	$(function () {
-		// прячем кнопку #back-top
+		// прячем кнопку .to-top-button
 		$(".to-top-button").hide();
 
 		$(window).scroll(function () {
