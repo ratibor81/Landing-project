@@ -145,7 +145,7 @@
   position: relative; }
   @media screen and (min-width: 768px) {
     .review-block {
-      width: 60%; } }
+      width: 63%; } }
   .review-block__card {
     display: flex;
     justify-content: space-between;
@@ -153,13 +153,20 @@
     height: auto;
     padding: 10px;
     box-shadow: 0 5px 6px rgba(0, 0, 0, 0.2); }
+    @media screen and (min-width: 480px) {
+      .review-block__card {
+        padding: 20px; } }
+    @media screen and (min-width: 768px) {
+      .review-block__card {
+        padding: 30px; } }
     @media screen and (min-width: 960px) {
       .review-block__card {
         padding: 35px; } }
   .review-block__page-counter {
     font-family: 'Acrom-ExtraBold';
     font-size: 0.1625rem;
-    line-height: 2; }
+    line-height: 2;
+    color: gray; }
     @media screen and (min-width: 480px) {
       .review-block__page-counter {
         font-size: 0.24375rem; } }
@@ -178,7 +185,8 @@
     .review-block__page-counter .through {
       font-size: 0.2925rem;
       text-decoration: line-through;
-      transition: .3s ease-in-out; }
+      transition: .3s ease-in-out;
+      color: #000; }
       @media screen and (min-width: 480px) {
         .review-block__page-counter .through {
           font-size: 0.44125rem; } }
@@ -231,7 +239,7 @@
 .review-block__col-2 {
   font-family: 'Acrom-Regular';
   font-size: 0.2275rem;
-  width: 73%;
+  width: 70%;
   line-height: 1.3; }
   @media screen and (min-width: 480px) {
     .review-block__col-2 {
@@ -1962,6 +1970,29 @@ body {
   @media (min-width: 1440px) {
     .future-bott__list-text {
       font-size: 0.65625rem; } }
+
+.to-top-button {
+  display: none;
+  width: 37px;
+  height: 37px;
+  position: fixed;
+  right: 3%;
+  bottom: 3%; }
+  .to-top-button svg {
+    width: 37px;
+    height: 37px;
+    fill: #16ebfe; }
+  .to-top-button svg path {
+    fill: inherit;
+    stroke: inherit;
+    stroke-width: inherit; }
+  .to-top-button .topbtn {
+    transition: .7s ease; }
+    .to-top-button .topbtn:hover {
+      -webkit-transform: scale(1.1);
+              transform: scale(1.1);
+      transition: .7s ease;
+      fill: #595f6d; }
 
 * {
   margin: 0;
