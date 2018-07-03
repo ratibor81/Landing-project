@@ -1,4 +1,10 @@
 @import '_fonts.scss';
+@import '_variables.scss';
+@import '_footer.scss';
+@import '_blocks16-20.scss';
+@import '_ps.scss';
+@import '_btn.scss';
+@import '_form.scss';
 
 * {
   margin: 0;
@@ -9,4 +15,17 @@
 .wrapper {
   min-width: 320px;
   max-width: 878px;
+  margin: 0 auto;
+  padding: 0 12px;
+  @media (min-width: 768px){
+    padding: 0 65px;
+  }
+  @media (min-width: 960px){
+    padding: 0 39px;
+  }
+  @media (min-width: 1200px){
+    padding: 0 12px;
+  }
 }
+
+

@@ -1,0 +1,21 @@
+$orange-color: #ff6b08;
+$blue-color: #16ebfe;
+$black-color: #000;
+$white-color: #fff;
+$base-size: 9px;
+
+@mixin text ($size : $base-size, $family:'Acrom-Regular') {
+	font-size: $size;
+	font-family: $family;
+}
+
+@mixin img ($src) {
+    background: url(../img/#{$src}.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+@function toRem($size-px){
+  $size-rem: $size-px / 16px;
+  @return #{$size-rem}rem;
+}
