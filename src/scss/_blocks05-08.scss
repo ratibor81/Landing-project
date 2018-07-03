@@ -108,6 +108,10 @@
     height: auto;
     padding: 10px;
     box-shadow: 0 5px 6px rgba(0, 0, 0, .2);
+    @media screen and (min-width: 960px) {
+      padding: 35px;
+      
+    }
   }
 
   &__page-counter {
@@ -304,7 +308,6 @@
   &__list {
     display: flex;
     flex-direction: column;
-    align-items: center;
     padding-left: 17px;
     @media screen and (min-width: 768px) {
       width: 92%;
@@ -331,7 +334,7 @@
       font-family: 'Acrom-Regular';
       color: #3f4144;
       text-transform: none;
-      width: 207px;
+      width: 85%;
       font-size: rem(8.7);
       @media screen and (min-width: 768px) {
         width: 90%;
