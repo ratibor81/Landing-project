@@ -40,3 +40,29 @@ btn_next.addEventListener('click', nextClickHandler);
 			});
 	});
 })($);
+
+// Скрипт плавной прокрутки страницы и скрытия кнопки to-top-button
+
+$(document).ready(function(){
+	// появление/затухание кнопки #back-top
+	$(function (){
+		// прячем кнопку #back-top
+		$(".to-top-button").hide();
+	
+		$(window).scroll(function (){
+			if ($(this).scrollTop() > 200){
+				$(".to-top-button").fadeIn();
+			} else{
+				$(".to-top-button").fadeOut();
+			}
+		});
+
+		// при клике на ссылку плавно поднимаемся вверх
+		$(".to-top-button").click(function (){
+			$("body,html").animate({
+				scrollTop:0
+			}, 800);
+			return false;
+		});
+	});
+});
