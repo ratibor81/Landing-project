@@ -7,13 +7,7 @@ body {
   background: radial-gradient(at  center 40%, #193049, #181c27);
   color: #fff;
 }
-.logo {
-  transition: .5s ease-in-out;
-  &:hover {
-    opacity: 0.7;
-    transition: .5s ease-in-out;
-  }
-}
+
 .header-nav {
   display: none;
   position: relative;
