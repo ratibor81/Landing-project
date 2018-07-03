@@ -131,7 +131,7 @@
 	@include text (12px, 'Acrom-ExtraBold');
 	text-transform: uppercase;
 	@media(min-width: 480px){
-    font-size: 18px;
+    	font-size: 18px;
 	}
 	@media(min-width: 768px){
 		//margin-left: 30px;
@@ -160,14 +160,17 @@
 	//@include text ('Acrom-Medium');
 	position: relative;
 	@media(min-width: 480px){
-	font-size: toRem(13.5px);
-	margin: 0;
-	padding-left: 45px;
-	width: 80%;
-	margin-bottom: 25px;
+		font-size: toRem(13.5px);
+		margin: 0 auto;
+		padding-left: 45px;
+		width: 80%;
+		margin-bottom: 25px;
 	}
 	@media(min-width: 768px){
-		width: 70%;
+		margin: 0;
+		margin-bottom: 25px;
+		width: 80%;
+		padding-left: 50px;
 		font-size: toRem(8.97px);
 	}
 	@media (min-width: 960px){
@@ -189,8 +192,11 @@
 	position: absolute;
 	left: -27px;
 	top: 8px;
+	@media(min-width: 480px){
+		left: -10px;
+	}
 	@media(min-width: 768px){
-		left: 10px;
+		left: 12px;
 	}
 }
 .future-bott__list {
