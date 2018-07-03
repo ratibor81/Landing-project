@@ -44,6 +44,7 @@
   margin: auto;
   background-color: #181c27;
   line-height: 1.5;
+  min-width: 320px;
 }
 
 .footer__wrap {
@@ -60,7 +61,7 @@
 .footer__title,
 .footer__link,
 .footer__button {
-  font-size: 3.5px;
+  font-size: 0.21875rem;
   font-family: "Acrom-ExtraBold";
   color: #fff;
   text-transform: uppercase;
@@ -75,7 +76,7 @@
 .footer__mailto,
 .footer__contact {
   text-decoration: none;
-  font-size: 3.5px;
+  font-size: 0.21875rem;
   font-family: "Acrom-Regular";
   color: #909092;
 }
@@ -119,7 +120,7 @@
   color: #4c4c4f;
   text-decoration: none;
   font-family: 'Gilroy-Light';
-  font-size: 4px;
+  font-size: 0.25rem;
 }
 
 .footer__list {
@@ -151,11 +152,11 @@
 
 .block__header,
 .important__header {
-  font-size: 12px;
+  font-size: 0.75rem;
   font-family: "Acrom-Bold";
   text-transform: uppercase;
   text-align: center;
-  margin-bottom: 15px;
+  margin-bottom: 12px;
 }
 
 .important__notice {
@@ -172,7 +173,7 @@
 .important__discr,
 .important__price,
 .ps__title {
-  font-size: 9px;
+  font-size: 0.5625rem;
   font-family: "Acrom-Medium";
 }
 
@@ -206,7 +207,7 @@
   position: relative;
   padding-left: 32px;
   margin-bottom: 15px;
-  font-size: 9px;
+  font-size: 0.54375rem;
   font-family: "Acrom-ExtraBold";
 }
 
@@ -215,7 +216,7 @@
   counter-increment: li;
   position: absolute;
   left: 0;
-  font-size: 17px;
+  font-size: 1.05rem;
   font-family: "Acrom-ExtraBold";
   text-indent: -5px;
   overflow: hidden;
@@ -227,19 +228,19 @@
   position: absolute;
   left: 10px;
   top: 19px;
-  font-size: 12px;
+  font-size: 0.75rem;
 }
 
 .ps__text,
 .ps__end {
-  font-size: 9px;
+  font-size: 0.5625rem;
   font-family: "Acrom-Regular";
   margin-bottom: 8px;
 }
 
 .bonus__discr,
 .important__text {
-  font-size: 8px;
+  font-size: 0.5rem;
   font-family: "Acrom-Regular";
   text-transform: none;
 }
@@ -257,7 +258,7 @@
   color: #000;
   position: absolute;
   left: -25px;
-  font-size: 12px;
+  font-size: 0.75rem;
 }
 
 .important__price-block {
@@ -275,7 +276,7 @@
 
 .important__discr {
   flex-basis: 40%;
-  font-size: 9px;
+  font-size: 0.5625rem;
   font-family: "Acrom-Medium";
 }
 
@@ -306,12 +307,12 @@
 }
 
 .big-char {
-  font-size: 25px;
+  font-size: 1.5625rem;
   font-family: "Acrom-ExtraBold";
 }
 
 .important__bold-text {
-  font-size: 9.5px;
+  font-size: 0.59375rem;
   font-family: "Acrom-Bold";
 }
 
@@ -331,7 +332,7 @@
 
 .ps__registrate::before {
   content: "GO";
-  font-size: 68px;
+  font-size: 4.23875rem;
   font-family: "Acrom-ExtraBold";
   -webkit-writing-mode: vertical-rl;
   -ms-writing-mode: tb-rl;
@@ -390,13 +391,13 @@
 .block__btn {
   margin: 20px auto 10px;
   width: 100%;
-  font-size: 7px;
+  font-size: 0.40563rem;
   font-family: "Acrom-ExtraBold";
 }
 
 .form__btn {
   margin: 20px 0;
-  font-size: 5px;
+  font-size: 0.33187rem;
   font-family: "Acrom-ExtraBold";
 }
 
@@ -425,25 +426,25 @@ input {
 }
 
 input::-webkit-input-placeholder {
-  font-size: 7px;
+  font-size: 0.4375rem;
   font-family: "Acrom-Regular";
   color: #000;
 }
 
 input:-ms-input-placeholder {
-  font-size: 7px;
+  font-size: 0.4375rem;
   font-family: "Acrom-Regular";
   color: #000;
 }
 
 input::-ms-input-placeholder {
-  font-size: 7px;
+  font-size: 0.4375rem;
   font-family: "Acrom-Regular";
   color: #000;
 }
 
 input::placeholder {
-  font-size: 7px;
+  font-size: 0.4375rem;
   font-family: "Acrom-Regular";
   color: #000;
 }
@@ -454,7 +455,7 @@ input:focus {
 
 .form__label {
   color: #a3a3a3;
-  font-size: 5px;
+  font-size: 0.3125rem;
   font-family: "Acrom-Bold";
 }
 
@@ -479,12 +480,12 @@ input:focus {
   .footer__title,
   .footer__link,
   .footer__button {
-    font-size: 5px;
+    font-size: 0.3125rem;
   }
 
   .footer__mailto,
   .footer__contact {
-    font-size: 5px;
+    font-size: 0.3125rem;
   }
 
   .footer__copyright {
@@ -505,14 +506,14 @@ input:focus {
 
   .block__header,
   .important__header {
-    font-size: 18px;
+    font-size: 1.125rem;
   }
 
   .bonus-title,
   .important__discr,
   .important__price,
   .ps__title {
-    font-size: 13.5px;
+    font-size: 0.84375rem;
   }
 
   .bonus-title {
@@ -521,7 +522,7 @@ input:focus {
   }
 
   .bonus__item {
-    font-size: 14px;
+    font-size: 0.81563rem;
     padding-left: 40px;
   }
 
@@ -530,11 +531,15 @@ input:focus {
   }
 
   .big-char {
-    font-size: 40px;
+    font-size: 2.5rem;
+  }
+
+  .important__bold-text {
+    font-size: 0.81563rem;
   }
 
   .ps__registrate::before {
-    font-size: 102px;
+    font-size: 6.35813rem;
     left: -130px;
   }
 
@@ -548,11 +553,11 @@ input:focus {
   }
 
   .block__btn {
-    font-size: 10px;
+    font-size: 0.60813rem;
   }
 
   .form__btn {
-    font-size: 8px;
+    font-size: 0.49812rem;
   }
 
   .form {
@@ -560,23 +565,23 @@ input:focus {
   }
 
   input::-webkit-input-placeholder {
-    font-size: 9px;
+    font-size: 0.5625rem;
   }
 
   input:-ms-input-placeholder {
-    font-size: 9px;
+    font-size: 0.5625rem;
   }
 
   input::-ms-input-placeholder {
-    font-size: 9px;
+    font-size: 0.5625rem;
   }
 
   input::placeholder {
-    font-size: 9px;
+    font-size: 0.5625rem;
   }
 
   .form__label {
-    font-size: 8px;
+    font-size: 0.5rem;
   }
 }
 
@@ -588,7 +593,7 @@ input:focus {
   .footer__title,
   .footer__link,
   .footer__button {
-    font-size: 8px;
+    font-size: 0.5rem;
   }
 
   .footer__title {
@@ -597,7 +602,7 @@ input:focus {
 
   .footer__mailto,
   .footer__contact {
-    font-size: 8px;
+    font-size: 0.5rem;
   }
 
   .footer__button {
@@ -613,7 +618,7 @@ input:focus {
   }
 
   .footer__list-link {
-    font-size: 6px;
+    font-size: 0.375rem;
   }
 
   .footer__ra {
@@ -644,8 +649,9 @@ input:focus {
 
   .block__header,
   .important__header {
-    font-size: 27px;
+    font-size: 1.6825rem;
     text-align: left;
+    padding: 0;
   }
 
   .important__header {
@@ -662,7 +668,7 @@ input:focus {
   .important__discr,
   .important__price,
   .ps__title {
-    font-size: 10px;
+    font-size: 0.56063rem;
   }
 
   .bonus__list {
@@ -675,7 +681,7 @@ input:focus {
   }
 
   .bonus__item {
-    font-size: 9px;
+    font-size: 0.5625rem;
     padding-left: 35px;
   }
 
@@ -688,7 +694,7 @@ input:focus {
   }
 
   .notice__text-line::before {
-    font-size: 17px;
+    font-size: 1.0625rem;
   }
 
   .important__price-block {
@@ -700,16 +706,20 @@ input:focus {
   }
 
   .big-char {
-    font-size: 30px;
+    font-size: 1.875rem;
+  }
+
+  .important__bold-text {
+    font-size: 0.56063rem;
   }
 
   .important__text-wrap {
     margin: auto;
-    width: 80%;
+    width: 83%;
   }
 
   .ps__registrate::before {
-    font-size: 146px;
+    font-size: 146.09px;
     left: 135px;
   }
 
@@ -746,7 +756,7 @@ input:focus {
   }
 
   .block__btn {
-    font-size: 7px;
+    font-size: 0.42063rem;
     margin-bottom: 0;
   }
 
@@ -757,6 +767,7 @@ input:focus {
   }
 
   .form__btn {
+    font-size: 0.42063rem;
     margin-bottom: 0;
   }
 
@@ -777,12 +788,12 @@ input:focus {
   .footer__title,
   .footer__link,
   .footer__button {
-    font-size: 10px;
+    font-size: 0.625rem;
   }
 
   .footer__mailto,
   .footer__contact {
-    font-size: 10px;
+    font-size: 0.625rem;
   }
 
   .footer__logo {
@@ -794,7 +805,7 @@ input:focus {
   }
 
   .footer__list-link {
-    font-size: 8px;
+    font-size: 0.525rem;
   }
 
   .important {
@@ -803,7 +814,7 @@ input:focus {
 
   .block__header,
   .important__header {
-    font-size: 33px;
+    font-size: 2.10312rem;
   }
 
   .important__notice {
@@ -814,7 +825,7 @@ input:focus {
   .important__discr,
   .important__price,
   .ps__title {
-    font-size: 12px;
+    font-size: 0.70125rem;
   }
 
   .bonus__list {
@@ -826,27 +837,27 @@ input:focus {
   }
 
   .bonus__item::before {
-    font-size: 21px;
+    font-size: 1.31438rem;
     text-indent: -7px;
   }
 
   .bonus__item::after {
     top: 25px;
-    font-size: 15px;
+    font-size: 0.9375rem;
   }
 
   .bonus__item {
-    font-size: 11px;
+    font-size: 0.70125rem;
   }
 
   .ps__text,
   .ps__end {
-    font-size: 10px;
+    font-size: 0.625rem;
   }
 
   .bonus__discr,
   .important__text {
-    font-size: 10px;
+    font-size: 0.61313rem;
   }
 
   .important__price-block {
@@ -854,12 +865,12 @@ input:focus {
   }
 
   .important__bold-text {
-    font-size: 11px;
+    font-size: 0.70125rem;
   }
 
   .ps__registrate::before {
-    font-size: 182px;
-    left: 162px;
+    font-size: 11.41313rem;
+    left: 170px;
     top: -15px;
   }
 
@@ -868,12 +879,21 @@ input:focus {
     left: -80px;
   }
 
+  .block__btn {
+    font-size: 0.52563rem;
+  }
+
+  .form__btn {
+    font-size: 0.52563rem;
+    margin-top: 30px;
+  }
+
   .form {
     padding: 60px;
   }
 
   .form__label {
-    font-size: 9px;
+    font-size: 0.5625rem;
   }
 
   .wrapper {
@@ -882,13 +902,18 @@ input:focus {
 }
 
 @media (min-width: 1200px) {
+  .footer__mailto,
+  .footer__contact {
+    font-size: 0.5625rem;
+  }
+
   .footer__list-link {
-    font-size: 7px;
+    font-size: 0.46875rem;
   }
 
   .block__header,
   .important__header {
-    font-size: 30px;
+    font-size: 1.875rem;
   }
 
   .important__notice {
@@ -903,7 +928,7 @@ input:focus {
   .important__discr,
   .important__price,
   .ps__title {
-    font-size: 10px;
+    font-size: 0.625rem;
   }
 
   .bonus__list {
@@ -915,21 +940,16 @@ input:focus {
   }
 
   .bonus__item::before {
-    font-size: 19px;
+    font-size: 1.17188rem;
   }
 
   .bonus__item {
-    font-size: 10px;
-  }
-
-  .ps__text,
-  .ps__end {
-    font-size: 10px;
+    font-size: 0.625rem;
   }
 
   .bonus__discr,
   .important__text {
-    font-size: 9px;
+    font-size: 0.54688rem;
   }
 
   .important__price-block {
@@ -937,11 +957,11 @@ input:focus {
   }
 
   .important__bold-text {
-    font-size: 10px;
+    font-size: 0.625rem;
   }
 
   .ps__registrate::before {
-    font-size: 162px;
+    font-size: 10.17313rem;
     left: 150px;
     top: -7px;
   }
@@ -954,20 +974,27 @@ input:focus {
     width: 80%;
   }
 
+  .block__btn {
+    font-size: 0.46875rem;
+  }
+
+  .form__btn {
+    font-size: 0.46875rem;
+  }
+
   .wrapper {
     padding: 0 12px;
   }
 }
 
-@media (min-width: 1400px) {
-  .block__btn {
-    font-size: 9px;
-  }
-}
-
 @media (min-width: 1440px) {
+  .footer__mailto,
+  .footer__contact {
+    font-size: 0.65625rem;
+  }
+
   .footer__list-link {
-    font-size: 9px;
+    font-size: 0.5625rem;
   }
 
   .important {
@@ -976,7 +1003,7 @@ input:focus {
 
   .block__header,
   .important__header {
-    font-size: 36px;
+    font-size: 2.25rem;
   }
 
   .important__notice {
@@ -987,7 +1014,7 @@ input:focus {
   .important__discr,
   .important__price,
   .ps__title {
-    font-size: 12px;
+    font-size: 0.75rem;
   }
 
   .bonus__list {
@@ -1000,27 +1027,27 @@ input:focus {
   }
 
   .bonus__item::before {
-    font-size: 22px;
+    font-size: 1.40625rem;
   }
 
   .bonus__item::after {
     left: 13px;
-    font-size: 17px;
+    font-size: 1.0625rem;
   }
 
   .bonus__item {
-    font-size: 12px;
+    font-size: 0.75rem;
     padding-left: 50px;
   }
 
   .ps__text,
   .ps__end {
-    font-size: 11px;
+    font-size: 0.6875rem;
   }
 
   .bonus__discr,
   .important__text {
-    font-size: 11px;
+    font-size: 0.65625rem;
   }
 
   .important__price-block {
@@ -1028,28 +1055,36 @@ input:focus {
   }
 
   .important__discr {
-    font-size: 12px;
+    font-size: 0.75rem;
   }
 
   .big-char {
-    font-size: 37px;
+    font-size: 2.3125rem;
   }
 
   .important__bold-text {
-    font-size: 12px;
+    font-size: 0.75rem;
   }
 
   .orange-text {
-    font-size: 12px;
+    font-size: 0.75rem;
   }
 
   .ps__registrate::before {
-    font-size: 195px;
+    font-size: 12.2075rem;
     left: 180px;
   }
 
   .ps__notice::before {
     font-size: 22px;
+  }
+
+  .block__btn {
+    font-size: 0.5625rem;
+  }
+
+  .form__btn {
+    font-size: 0.5625rem;
   }
 
   .form {
@@ -1061,12 +1096,11 @@ input:focus {
   .footer__title,
   .footer__link,
   .footer__button {
-    font-size: 9px;
+    font-size: 0.5625rem;
   }
 
-  .footer__mailto,
-  .footer__contact {
-    font-size: 9px;
+  .form__label {
+    font-size: 0.4375rem;
   }
 }
 
@@ -1076,7 +1110,7 @@ input:focus {
   }
 
   .bonus__item::before {
-    font-size: 25px;
+    font-size: 1.57563rem;
     text-indent: -7px;
     left: -5px;
   }
@@ -1084,66 +1118,47 @@ input:focus {
   .bonus__item::after {
     left: 11px;
     top: 28px;
-    font-size: 17px;
+    font-size: 1.0625rem;
   }
 
   .ps__text,
   .ps__end {
-    font-size: 13px;
+    font-size: 0.8125rem;
   }
 
   .bonus__discr,
   .important__text {
-    font-size: 12px;
+    font-size: 0.75rem;
   }
 
   .notice__text-line::before {
     left: -35px;
-    font-size: 18px;
+    font-size: 1.125rem;
   }
 
   .important__discr {
-    font-size: 13px;
-  }
-
-  .important__bold-text {
-    font-size: 14px;
+    font-size: 0.8125rem;
   }
 }
 
 @media (min-width: 960px) and (max-width: 1200px) {
   .important__discr {
-    font-size: 11px;
-  }
-
-  .block__btn {
-    font-size: 9px;
-  }
-
-  .form__btn {
-    font-size: 9px;
-    margin-top: 30px;
+    font-size: 0.6875rem;
   }
 
   input::-webkit-input-placeholder {
-    font-size: 10px;
+    font-size: 0.625rem;
   }
 
   input:-ms-input-placeholder {
-    font-size: 10px;
+    font-size: 0.625rem;
   }
 
   input::-ms-input-placeholder {
-    font-size: 10px;
+    font-size: 0.625rem;
   }
 
   input::placeholder {
-    font-size: 10px;
-  }
-}
-
-@media (min-width: 1200px) and (max-width: 1400px) {
-  .form__label {
-    font-size: 7px;
+    font-size: 0.625rem;
   }
 }
