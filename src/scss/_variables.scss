@@ -1,7 +1,8 @@
 $orange-color: #ff6b08;
 $blue-color: #16ebfe;
 $base-size: 9px;
-
+$black-color: #000;
+$white-color: #fff;
 
 
 @mixin text ($size : $base-size, $family:'Acrom-Regular') {
