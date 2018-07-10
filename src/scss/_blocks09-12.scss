@@ -480,6 +480,10 @@ ul {
             .left-toptxt {
                 width: 65%;
             }
+            .topbox-txt {
+                font-size: rem(8.97);
+                line-height: 1.5;
+            }
         }
         .central-box {
             width: 75%;
@@ -521,6 +525,10 @@ ul {
     }
     .videolessons {
         padding: 35px 0 55px 0;
+        .topbox-txt {
+            font-size: rem(8.97);
+            line-height: 1.5;
+        }
         .video-topbox {
             display: flex;
             justify-content: space-between;
@@ -578,7 +586,11 @@ ul {
         }
     }
     .rewards {
-        padding: 68px 0 74px 0;
+        padding-bottom: 70px;
+        .topbox-txt {
+            font-size: rem(8.97);
+            line-height: 1.5;
+        }
         .rewards-top {
             margin-bottom: 65px;
             display: flex;
@@ -681,6 +693,12 @@ ul {
         flex-wrap: wrap;
         align-content: space-between;
         height: 345px;
+        //height: 422px;
+        //padding-bottom: 80px;
+        .topbox-txt {
+            font-size: rem(8.97);
+            line-height: 1.5;
+        }
         .item-article {
             width: 80%;
         }
